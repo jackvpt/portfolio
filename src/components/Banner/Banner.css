@@ -1,0 +1,12 @@
+/* =========================================== */
+/* VARIABLES */
+/* =========================================== */
+.div__banner {
+  margin: 0 auto;
+}
+.div__banner img {
+  width: 100%;
+  max-height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=Banner.css.map */

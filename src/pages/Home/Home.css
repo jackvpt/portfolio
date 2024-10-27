@@ -1,0 +1,15 @@
+/* =========================================== */
+/* VARIABLES */
+/* =========================================== */
+.div__wines {
+  margin-bottom: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.div__none {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}/*# sourceMappingURL=Home.css.map */

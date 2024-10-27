@@ -1,0 +1,68 @@
+@use "../../variables.scss";
+
+header {
+  display: flex;
+  // flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  height: 60px;
+  background-color: variables.$primary-bg-color;
+  position: relative;
+
+  @media (max-width: variables.$breakpoint-mobile) {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    flex-direction: column;
+  }
+
+  h1 {
+    color: variables.$color4;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+
+    @media (min-width: variables.$breakpoint-desktop-large) {
+      font-size: 36px;
+    }
+
+    @media (min-width: variables.$breakpoint-mobile) and (max-width: variables.$breakpoint-desktop-large) {
+      font-size: 24px;
+    }
+
+    @media (max-width: variables.$breakpoint-mobile) {
+      font-size: 18px;
+      position: static;
+      left: 0;
+      transform: none;
+    }
+  }
+
+  .div__connexion {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    @media (max-width: variables.$breakpoint-mobile) {
+      margin-left: 0;
+    }
+
+    &-button {
+      font-size: 16px;
+      cursor: pointer;
+
+      @media (max-width: variables.$breakpoint-mobile) {
+        font-size: 14px;
+      }
+
+      &:hover {
+        color: red;
+      }
+    }
+  }
+}

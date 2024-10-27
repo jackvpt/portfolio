@@ -1,0 +1,43 @@
+@use "variables.scss";
+
+* {
+  font-family: "Montserrat", sans-serif;
+  font-size:12px;
+  margin: 0;
+}
+
+html {
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: auto;
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: variables.$breakpoint-desktop-large) {
+    padding: 0 50px;
+  }
+
+  @media (max-width: variables.$breakpoint-desktop) {
+    padding: 0 20px;
+  }
+
+  @media (max-width: variables.$breakpoint-mobile) {
+    padding: 0 10px;
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: variables.$breakpoint-mobile) {
+    padding-top: 20px;
+  }
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
