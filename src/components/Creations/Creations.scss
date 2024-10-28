@@ -1,0 +1,42 @@
+@use "../../variables.scss";
+
+.div__creations {
+  margin: 20px 0;
+
+  h3 {
+    font-size: 64px;
+  }
+}
+
+.div__tags {
+  margin-top:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+
+  article {
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #444f5f;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    &:hover{
+      cursor: pointer;
+    }
+
+    img {
+      height: 44px;
+    }
+
+    h4 {
+      font-family: "Michroma", sans-serif;
+      font-weight:400;
+      margin-left:10px;
+    }
+  }
+}
