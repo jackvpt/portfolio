@@ -3,6 +3,7 @@
 * {
   font-family: "Montserrat", sans-serif;
   font-size:12px;
+  font-weight:400;
   margin: 0;
   padding:0;
 }
@@ -41,4 +42,9 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+h3 {
+  font-size: 44px;
+  font-weight:bold;
 }

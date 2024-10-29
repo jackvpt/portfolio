@@ -2,41 +2,74 @@
 
 .div__creations {
   margin: 20px 0;
+  padding: 20px;
 
-  h3 {
-    font-size: 64px;
-  }
+
+
 }
 
-.div__tags {
+.div__filter {
   margin-top:20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 30px;
+  flex-wrap: wrap;
+  border: 1px solid variables.$blue_dark;
+  border-radius: 10px;
+  padding:10px;
 
-  article {
-    padding: 5px 10px;
+
+
+  .tag {
+    min-width:140px;
+    padding: 5px 20px 5px 10px;
     border-radius: 10px;
-    background-color: #444f5f;
+    background-color: variables.$blue_dark;
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
+
+    &-all{
+      justify-content: center;
+    }
+  
+    &-notAll{
+      justify-content: space-between;
+    }
 
     &:hover{
       cursor: pointer;
+      animation: fadeColor_creations 0.3s forwards; 
+
+      @keyframes fadeColor_creations {
+        100% {
+          background-color: variables.$blue_medium;
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        }
+      }
     }
 
     img {
-      height: 44px;
+      height: 40px;
     }
 
     h4 {
       font-family: "Michroma", sans-serif;
+      font-size:14px;
       font-weight:400;
       margin-left:10px;
     }
   }
 }
+
+.div__projects{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap:20px;
+  flex-wrap: wrap;
+}
+
+

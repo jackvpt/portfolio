@@ -15,16 +15,14 @@
       color:black;
 
       &:hover{
-        animation: fadeIn 0.5s forwards; /* Démarre l'animation */
-
+        animation: fadeColor_navbar 0.5s forwards; 
       }
     }
 }
 
-@keyframes fadeIn {
+@keyframes fadeColor_navbar {
   100% {
-      background-color: #444f5f; /* Remplit progressivement la largeur */
+      background-color: variables.$blue_dark;
       color:white;
-
   }
 }
