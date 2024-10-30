@@ -3,7 +3,7 @@
 /* =========================================== */
 
 $primary-color: #134074;
-$primary-bg-color:#f5f5f5;
+$primary-bg-color:#f2f2f2;
 $color2: #13315c;
 $color3: #0b2545;
 $color4:#8da9c4;
@@ -17,4 +17,31 @@ $breakpoint-mobile: 768px;
 $breakpoint-desktop: 1024px;
 $breakpoint-desktop-large: 1440px;
 $breakpoint-desktop-extralarge: 1768px;
+
+$color_background1_1:#0C111C; // 1 - Usage: Backgrounds | Pairs with: Steps 11, 12 text
+$color_background1_2:#111725; // 2 - Usage: Backgrounds | Pairs with: Steps 11, 12 text
+$color_interactive1_1:#172448; // 3 - Usage: Interactive components | Pairs with: Steps 11 labels, Step 12 text
+$color_interactive1_2:#1D2E61; // 4 - Usage: Interactive components | Pairs with: Steps 11, 12 labels
+$color_interactive1_3:#243974; // 5 -Usage: Interactive components | Pairs with: Step 12 labels
+$color_borders1_1:#2D4484; // 6 - Usage Borders and separators | Pairs with: Steps 1–5 backgrounds
+$color_borders1_2:#375098; // 7 - Usage: Borders and separators | Pairs with: Steps 1–5 backgrounds
+$color_borders1_3:#405EB2; // 8 - Usage: Borders, focus rings | Pairs with: Steps 1–5 backgrounds
+$color_solid1_1:#3D63DD; // 9 - Usage: Solid backgrounds, buttons | Pairs with: White text
+$color_solid1_2:#3F5CB0; // 10 - Usage: Solid backgrounds, buttons | Pairs with: White text
+$color_accessible1_1:#93B4FF; // 11 - Usage: Secondary text, links | Pairs with: Background colors
+$color_accessible1_2: #D5E2FF; // 12 - Usage: High-contrast text | Pairs with: Background colors
+
+$color_background2_1:#111113; // 1 - Usage: Backgrounds | Pairs with: Steps 11, 12 text
+$color_background2_2:#19191B; // 2 - Usage: Backgrounds | Pairs with: Steps 11, 12 text
+$color_interactive2_1:#222325; // 3 - Usage: Interactive components | Pairs with: Steps 11 labels, Step 12 text
+$color_interactive2_2:#292A2E; // 4 - Usage: Interactive components | Pairs with: Steps 11, 12 labels
+$color_interactive2_3:#303136; // 5 -Usage: Interactive components | Pairs with: Step 12 labels
+$color_borders2_1:#393A40; // 6 - Usage Borders and separators | Pairs with: Steps 1–5 backgrounds
+$color_borders2_2:#46484F; // 7 - Usage: Borders and separators | Pairs with: Steps 1–5 backgrounds
+$color_borders2_3:#5F606A; // 8 - Usage: Borders, focus rings | Pairs with: Steps 1–5 backgrounds
+$color_solid2_1:#6C6E79; // 9 - Usage: Solid backgrounds, buttons | Pairs with: White text
+$color_solid2_2:#797B86; // 10 - Usage: Solid backgrounds, buttons | Pairs with: White text
+$color_accessible2_1:#B2B3BD; // 11 - Usage: Secondary text, links | Pairs with: Background colors
+$color_accessible2_2: #EEEEF0; // 12 - Usage: High-contrast text | Pairs with: Background colors
+
 

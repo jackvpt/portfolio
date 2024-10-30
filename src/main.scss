@@ -2,19 +2,18 @@
 
 * {
   font-family: "Montserrat", sans-serif;
-  font-size:12px;
-  font-weight:400;
+  font-size: 12px;
+  font-weight: 400;
   margin: 0;
-  padding:0;
+  padding: 0;
 }
 
 html {
-  max-width: 1440px;
   min-height: 100vh;
   margin: auto;
-  padding: 0 100px;
   display: flex;
   flex-direction: column;
+  background-color: variables.$color_background2_1;
 
   @media (max-width: variables.$breakpoint-desktop-large) {
     padding: 0 50px;
@@ -44,7 +43,13 @@ body {
   min-height: 100vh;
 }
 
+main {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
 h3 {
   font-size: 44px;
-  font-weight:bold;
+  font-weight: bold;
+  color: variables.$color_accessible2_2;
 }

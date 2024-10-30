@@ -1,7 +1,7 @@
 /* =========================================== */
 /* VARIABLES */
 /* =========================================== */
-.div__introduction {
+.div__skills {
   margin: 50px 0;
   padding: 20px;
   background-color: #19191B;
@@ -9,8 +9,7 @@
   border-radius: 10px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
 }
-.div__introduction p {
-  color: #B2B3BD;
-  font-family: "Gowun Dodum", cursive;
-  font-size: 20px;
-}/*# sourceMappingURL=Introduction.css.map */
+.article__category h4 {
+  color: #EEEEF0;
+  font-size: 18px;
+}/*# sourceMappingURL=Skills.css.map */

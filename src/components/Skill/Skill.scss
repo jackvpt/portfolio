@@ -1,0 +1,35 @@
+@use "../../variables.scss";
+
+.div__skill {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &-img{
+    width:40px;
+  }
+
+  img {
+    height: 36px;
+  }
+  &-name {
+    width: 100px;
+    text-align: left;
+    margin: 0 20px 0;
+    color: variables.$color_accessible2_1;
+    font-family: "Michroma";
+  }
+
+  &-rating {
+    width: 14px;
+    height: 14px;
+    background-color: variables.$color_interactive1_1;
+    border-radius: 7px;
+    margin:0 2px;
+  }
+
+  .active {
+    background-color: variables.$color_solid1_2;
+  }
+}

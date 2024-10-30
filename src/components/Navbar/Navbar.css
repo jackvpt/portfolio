@@ -8,20 +8,30 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: #111113;
 }
 .navbar-link {
   text-decoration: none;
   font-size: 18px;
   padding: 10px 20px;
-  color: black;
+  color: #B2B3BD;
+  border-bottom: 0.5px solid #303136;
 }
 .navbar-link:hover {
   animation: fadeColor_navbar 0.5s forwards;
+  color: #EEEEF0;
+}
+.navbar .active {
+  color: white;
+  font-weight: 700;
+  border-bottom: 3px solid #3D63DD;
 }
 
 @keyframes fadeColor_navbar {
   100% {
-    background-color: #444f5f;
+    background-color: #405EB2;
     color: white;
   }
 }/*# sourceMappingURL=Navbar.css.map */

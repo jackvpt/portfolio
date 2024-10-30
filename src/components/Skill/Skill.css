@@ -1,0 +1,32 @@
+/* =========================================== */
+/* VARIABLES */
+/* =========================================== */
+.div__skill {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.div__skill-img {
+  width: 40px;
+}
+.div__skill img {
+  height: 36px;
+}
+.div__skill-name {
+  width: 100px;
+  text-align: left;
+  margin: 0 20px 0;
+  color: #B2B3BD;
+  font-family: "Michroma";
+}
+.div__skill-rating {
+  width: 14px;
+  height: 14px;
+  background-color: #172448;
+  border-radius: 7px;
+  margin: 0 2px;
+}
+.div__skill .active {
+  background-color: #3F5CB0;
+}/*# sourceMappingURL=Skill.css.map */

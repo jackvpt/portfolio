@@ -1,31 +1,39 @@
 @use "../../variables.scss";
 
 .navbar {
-    margin: 0 auto;
-    height:50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position:sticky;
-    top:0;
-    background-color: white;
+  margin: 0 auto;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: variables.$color_background2_1;
 
-    &-link {
-      text-decoration: none;
-      font-size:18px;
-      padding:10px 20px;
-      color:black;
+  &-link {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    color: variables.$color_accessible2_1;
+    border-bottom: 0.5px solid variables.$color_interactive2_3;
 
-      &:hover{
-        animation: fadeColor_navbar 0.5s forwards; 
-      }
+    &:hover {
+      animation: fadeColor_navbar 0.5s forwards;
+      color: variables.$color_accessible2_2;
     }
+  }
+
+  .active {
+    color:white;
+    font-weight:700;
+    border-bottom: 3px solid variables.$color_solid1_1;
+  }
 }
 
 @keyframes fadeColor_navbar {
   100% {
-      background-color: variables.$blue_dark;
-      color:white;
+    background-color: variables.$color_borders1_3;
+    color: white;
   }
 }
