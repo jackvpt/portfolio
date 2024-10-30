@@ -7,8 +7,8 @@ export default function Navbar() {
             <Link className="navbar-link" to="/">Accueil</Link>
             <Link className="navbar-link" to="/#introduction">Présentation</Link>
             <Link className="navbar-link" to="/#creations">Réalisations</Link>
-            <Link className="navbar-link" to="/skills">Compétences</Link>
-            <Link className="navbar-link" to="/contact">Contact</Link>
+            <Link className="navbar-link" to="/#skills">Compétences</Link>
+            <Link className="navbar-link" to="/#contact">Contact</Link>
         </nav>
     );
 }

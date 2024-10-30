@@ -12,7 +12,6 @@ export default function Router() {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/creations" element={<Creations />} />
             <Route path="*" element={<Error />} />
           </Routes>
         </main>
