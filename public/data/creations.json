@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Booki",
+    "skills": ["html", "css"],
+    "image": "booki"
+  },
+  {
+    "name": "Sophie Bluel",
+    "skills": ["javascript"],
+    "image": "sophie_bluel"
+  },
+  {
+    "name": "Kasa",
+    "skills": ["react"],
+    "image": "kasa"
+  }
+]

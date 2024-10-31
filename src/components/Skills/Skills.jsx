@@ -1,12 +1,18 @@
 import Skill from "../Skill/Skill"
+import { useFetch } from "../../utils/useFetch"
 import "./Skills.scss"
 
 export default function Skills() {
-  const skills = [
-    { name: "HTML", rating: 10 },
-    { name: "CSS", rating: 9 },
-    { name: "React", rating: 8 },
-  ]
+  // Fetch call returns 'data', 'isLoading' and 'error'
+  const fetchResult = useFetch("/data/skills.json")
+
+  if (!fetchResult.data) return
+
+  // Get data from fetch
+  const skills = fetchResult.data
+
+  const skillsFront = skills.find((item) => item.category === "frontend").skills
+  const skillsBack = skills.find((item) => item.category === "backend").skills
 
   return (
     <section className="div__skills">
@@ -14,8 +20,14 @@ export default function Skills() {
       <div className="div__skills-categories">
         <article className="article__category">
           <h4>Front End</h4>
-          {skills.map((skill, index) => (
-            <Skill skill={skill} />
+          {skillsFront.map((skill, index) => (
+            <Skill key={index} skill={skill} />
+          ))}
+        </article>
+        <article className="article__category">
+          <h4>Back End</h4>
+          {skillsBack.map((skill, index) => (
+            <Skill key={index} skill={skill} />
           ))}
         </article>
       </div>

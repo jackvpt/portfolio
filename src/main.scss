@@ -23,7 +23,7 @@ html {
     padding: 0 20px;
   }
 
-  @media (max-width: variables.$breakpoint-mobile) {
+  @media (max-width: variables.$breakpoint-tablet) {
     padding: 0 10px;
   }
 }
@@ -32,7 +32,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  @media (max-width: variables.$breakpoint-mobile) {
+  @media (max-width: variables.$breakpoint-tablet) {
     padding-top: 20px;
   }
 }
@@ -51,5 +51,11 @@ main {
 h3 {
   font-size: 44px;
   font-weight: bold;
+  text-align: center;
   color: variables.$color_accessible2_2;
+  margin-bottom: 20px;
+
+  @media (max-width: variables.$breakpoint-desktop) {
+    font-size:32px;
+  }
 }

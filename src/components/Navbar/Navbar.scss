@@ -11,12 +11,23 @@
   top: 0;
   background-color: variables.$color_background2_1;
 
+  @media (max-width: variables.$breakpoint-desktop) {
+    flex-direction: column;
+    position:relative;
+    height:auto;
+  }
+
   &-link {
+    text-align: center;
     text-decoration: none;
     font-size: 18px;
     padding: 10px 20px;
     color: variables.$color_accessible2_1;
     border-bottom: 0.5px solid variables.$color_interactive2_3;
+
+    @media (max-width: variables.$breakpoint-desktop) {
+      width:100%;
+    }
 
     &:hover {
       animation: fadeColor_navbar 0.5s forwards;

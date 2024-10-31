@@ -1,10 +1,16 @@
 @use "../../variables.scss";
 
 .div__skill {
-  margin-bottom: 10px;
+  margin: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
+
+  @media (max-width: variables.$breakpoint-desktop) {
+    margin-bottom:20px;
+    justify-content: center;
+  }
 
   &-img{
     width:40px;
@@ -19,14 +25,42 @@
     margin: 0 20px 0;
     color: variables.$color_accessible2_1;
     font-family: "Michroma";
+    font-size:14px;
+
+    @media (max-width: variables.$breakpoint-desktop) {
+      width: 80px;
+      font-size:10px;
+    }
   }
 
-  &-rating {
+  &-ratings{
+    display: flex;
+    flex-direction: row;
+
+    @media (max-width: variables.$breakpoint-mobile) {
+     border:1px solid variables.$color_interactive2_3;
+    }
+  }
+
+  .rating {
     width: 14px;
     height: 14px;
     background-color: variables.$color_interactive1_1;
     border-radius: 7px;
     margin:0 2px;
+
+    @media (max-width: variables.$breakpoint-desktop) {
+      width:12px;
+      height:12px;
+      margin:0 1px;
+    }
+
+    @media (max-width: variables.$breakpoint-mobile) {
+      width:10px;
+      height:10px;
+      margin:0;
+      border-radius: 0;
+    }
   }
 
   .active {

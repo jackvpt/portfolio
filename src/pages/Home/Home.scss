@@ -3,6 +3,10 @@
 .section__navbar{
   position:sticky;
   top:0;
+
+  @media (max-width: variables.$breakpoint-desktop) {
+    position:relative;
+  }
 }
 
 

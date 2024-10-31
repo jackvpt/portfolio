@@ -10,13 +10,15 @@ export default function Skill({ skill }) {
         ></img>
       </div>
       <div className="div__skill-name">{skill.name}</div>
-      {[...Array(10)].map((e, index) => (
-        <div
-          className={`div__skill-rating ${
-            index < skill.rating ? "active" : ""
-          }`}
-        ></div>
-      ))}
+      <div className="div__skill-ratings">
+        {[...Array(10)].map((e, index) => (
+          <div key={index}
+            className={`rating ${
+              index < skill.rating ? "active" : ""
+            }`}
+          ></div>
+        ))}
+      </div>
     </div>
   )
 }
