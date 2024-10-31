@@ -2,16 +2,25 @@
   {
     "name": "Booki",
     "skills": ["html", "css"],
-    "image": "booki"
+    "image": "booki",
+    "description": "Booki représente un projet de formation entrepris à OpenClassrooms dans le but d'acquérir des compétences en conception responsive. En partant d'une maquette Figma, j'ai développé une landing page en version desktop, et j'ai implémenté les media que"
   },
   {
     "name": "Sophie Bluel",
     "skills": ["javascript"],
-    "image": "sophie_bluel"
+    "image": "sophie_bluel",
+    "description": "Booki représente un projet de formation entrepris à OpenClassrooms dans le but d'acquérir des compétences en conception responsive. En partant d'une maquette Figma, j'ai développé une landing page en version desktop, et j'ai implémenté les media queries pour assurer la compatibilité du site avec les versions tablette et mobile."
   },
   {
     "name": "Kasa",
     "skills": ["react"],
-    "image": "kasa"
+    "image": "kasa",
+    "description": "Booki représente un projet de formation entrepris à OpenClassrooms dans le but d'acquérir des compétences en conception responsive. En partant d'une maquette Figma, j'ai développé une landing page en version desktop, et j'ai implémenté les media queries pour assurer la compatibilité du site avec les versions tablette et mobile."
+  },
+  {
+    "name": "Vieux Grimoire",
+    "skills": ["mongodb", "express", "nodejs"],
+    "image": "vieux_grimoire",
+    "description": "Booki représente un projet de formation entrepris à OpenClassrooms dans le but d'acquérir des compétences en conception responsive. En partant d'une maquette Figma, j'ai développé une landing page en version desktop, et j'ai implémenté les media queries pour assurer la compatibilité du site avec les versions tablette et mobile."
   }
 ]
