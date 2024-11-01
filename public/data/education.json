@@ -1,0 +1,20 @@
+[
+  {
+    "rank": 1,
+    "year": "1985",
+    "text": "Tout premier ordinateur: un AMSTRAD CPC 464.",
+    "image":"amstrad_cpc464.webp"
+  },
+  {
+    "rank": 2,
+    "year": "1985 - 2024",
+    "text": "Carrière avec le développement en filigrane",
+    "image":"aero.webp"
+  },
+  {
+    "rank": 3,
+    "year": "2024",
+    "text": "Formation développeur web avec OpenClassRooms",
+    "image":"openclassrooms.webp"
+  }
+]

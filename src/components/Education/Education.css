@@ -1,0 +1,20 @@
+/* =========================================== */
+/* VARIABLES */
+/* =========================================== */
+.div__education {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.div__education-steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.div__education-line {
+  background-color: #B2B3BD;
+  width: 2px;
+  height: 100px;
+  margin: 10px;
+}/*# sourceMappingURL=Education.css.map */

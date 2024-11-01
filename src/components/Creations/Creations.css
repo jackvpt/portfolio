@@ -4,59 +4,17 @@
 .div__creations {
   margin: 20px 0;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-.div__filter {
-  margin-top: 20px;
+.div__projects { /* Not needed if autoprefixing */ /* Not needed if autoprefixing */
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  border: 1px solid #444f5f;
-  border-radius: 10px;
-  padding: 10px;
-}
-.div__filter .tag {
-  min-width: 140px;
-  padding: 5px 20px 5px 10px;
-  border-radius: 10px;
-  background-color: #444f5f;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.div__filter .tag-all {
-  justify-content: center;
-}
-.div__filter .tag-notAll {
-  justify-content: space-between;
-}
-.div__filter .tag:hover {
-  cursor: pointer;
-  animation: fadeColor_creations 0.3s forwards;
-}
-@keyframes fadeColor_creations {
-  100% {
-    background-color: #498ccd;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  }
-}
-.div__filter .tag img {
-  height: 40px;
-}
-.div__filter .tag h4 {
-  font-family: "Michroma", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  margin-left: 10px;
-}
-
-.div__projects {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  width: auto;
   gap: 20px;
-  flex-wrap: wrap;
+}
+
+.grid_column {
+  background-clip: padding-box;
 }/*# sourceMappingURL=Creations.css.map */

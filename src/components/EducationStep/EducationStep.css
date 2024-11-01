@@ -1,0 +1,33 @@
+/* =========================================== */
+/* VARIABLES */
+/* =========================================== */
+.div__step {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.div__step h4 {
+  color: #EEEEF0;
+  font-family: "Michroma";
+  font-size: 16px;
+  font-weight: 700;
+}
+.div__step-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 160px;
+  background-color: #1D2E61;
+  border-radius: 80px;
+}
+.div__step-img .img__step {
+  width: 80%;
+}
+.div__step-text {
+  text-align: center;
+  margin: 10px 0;
+  color: #B2B3BD;
+  font-size: 14px;
+}/*# sourceMappingURL=EducationStep.css.map */

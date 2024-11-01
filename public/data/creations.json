@@ -3,24 +3,36 @@
     "name": "Booki",
     "skills": ["html", "css"],
     "image": "booki",
-    "description": "Booki représente un projet de formation entrepris à OpenClassrooms dans le but d'acquérir des compétences en conception responsive. En partant d'une maquette Figma, j'ai développé une landing page en version desktop, et j'ai implémenté les media que"
+    "title": "Intégration front-end",
+    "description": "Interface responsive pour un site de réservation de logement et d'activités touristiques.",
+    "github": "https://github.com/jackvpt/booki.git",
+    "website": "https://jackvpt.github.io/booki/"
   },
   {
     "name": "Sophie Bluel",
     "skills": ["javascript"],
     "image": "sophie_bluel",
-    "description": "Booki représente un projet de formation entrepris à OpenClassrooms dans le but d'acquérir des compétences en conception responsive. En partant d'une maquette Figma, j'ai développé une landing page en version desktop, et j'ai implémenté les media queries pour assurer la compatibilité du site avec les versions tablette et mobile."
+    "title": "Dynamiser une interface utilisateur",
+    "description": "Site de portfolio interactif pour une photographe en intégrant des fonctionnalités avancées de JavaScript ainsi qu'une API REST.",
+    "github": "https://github.com/jackvpt/Portfolio-architecte-sophie-bluel.git",
+    "website": "https://jackvpt.github.io/Portfolio-architecte-sophie-bluel/"
   },
   {
     "name": "Kasa",
     "skills": ["react"],
     "image": "kasa",
-    "description": "Booki représente un projet de formation entrepris à OpenClassrooms dans le but d'acquérir des compétences en conception responsive. En partant d'une maquette Figma, j'ai développé une landing page en version desktop, et j'ai implémenté les media queries pour assurer la compatibilité du site avec les versions tablette et mobile."
+    "title": "Développement front-end",
+    "description": "Utilisation de React pour créer une application web complète et dynamique de location d'appartements.",
+    "github": "https://github.com/jackvpt/kasa.git",
+    "website": "https://jackvpt.github.io/kasa/"
   },
   {
     "name": "Vieux Grimoire",
     "skills": ["mongodb", "express", "nodejs"],
     "image": "vieux_grimoire",
-    "description": "Booki représente un projet de formation entrepris à OpenClassrooms dans le but d'acquérir des compétences en conception responsive. En partant d'une maquette Figma, j'ai développé une landing page en version desktop, et j'ai implémenté les media queries pour assurer la compatibilité du site avec les versions tablette et mobile."
+    "title": "Développement back-end",
+    "description": "Création d'une API pour une application de gestion critiques de livres qui permet aux utilisateurs de noter et de commenter les ouvrages disponibles.",
+    "github": "https://github.com/jackvpt/vieuxgrimoire.git",
+    "website": "https://jackvpt.github.io/vieuxgrimoire/"
   }
 ]

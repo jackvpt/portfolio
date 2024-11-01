@@ -6,7 +6,7 @@
 }
 .div__banner img {
   width: 100vw;
-  max-height: 400px;
+  max-height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
 }/*# sourceMappingURL=Banner.css.map */

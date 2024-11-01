@@ -46,10 +46,6 @@
     border: 2px solid variables.$color_accessible2_1;
     border-radius: 5px;
   }
-
-  &:hover {
-    cursor: pointer;
-  }
 }
 
 .div__cards {
@@ -63,19 +59,46 @@
   transform: rotateY(180deg);
 }
 
-.card-front,
-.card-back {
+.card__front,
+.card__back {
   height: 200px;
   position: absolute;
   backface-visibility: hidden;
 }
 
-.card-back {
+.card__back {
+  display: flex;
+  flex-direction: column;
   height: 180px;
-  padding: 10px ;
+  padding: 10px;
   border-radius: 5px;
   background-color: variables.$color_background1_1;
-  color:variables.$color_accessible2_1;
+  color: variables.$color_accessible2_1;
   border: 1px solid variables.$color_accessible2_1;
   transform: rotateY(180deg);
+
+  &-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: variables.$color_accessible2_2;
+    margin-bottom: 5px;
+  }
+
+  &-button {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: variables.$color_solid1_1;
+    color: white;
+    text-align: center;
+    align-content: center;
+    align-self: flex-end;
+    margin-top: auto;
+
+    &:hover {
+      cursor: pointer;
+      background-color: variables.$color_interactive1_1;
+      color: variables.$color_accessible1_1;
+    }
+  }
 }

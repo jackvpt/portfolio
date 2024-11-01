@@ -12,12 +12,25 @@
   top: 0;
   background-color: #111113;
 }
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    position: relative;
+    height: auto;
+  }
+}
 .navbar-link {
+  text-align: center;
   text-decoration: none;
   font-size: 18px;
   padding: 10px 20px;
   color: #B2B3BD;
   border-bottom: 0.5px solid #303136;
+}
+@media (max-width: 1024px) {
+  .navbar-link {
+    width: 100%;
+  }
 }
 .navbar-link:hover {
   animation: fadeColor_navbar 0.5s forwards;

@@ -2,10 +2,17 @@
 /* VARIABLES */
 /* =========================================== */
 .div__skill {
-  margin-bottom: 10px;
+  margin: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 1024px) {
+  .div__skill {
+    margin-bottom: 20px;
+    justify-content: center;
+  }
 }
 .div__skill-img {
   width: 40px;
@@ -19,13 +26,44 @@
   margin: 0 20px 0;
   color: #B2B3BD;
   font-family: "Michroma";
+  font-size: 14px;
 }
-.div__skill-rating {
+@media (max-width: 1024px) {
+  .div__skill-name {
+    width: 80px;
+    font-size: 10px;
+  }
+}
+.div__skill-ratings {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 480px) {
+  .div__skill-ratings {
+    border: 1px solid #303136;
+  }
+}
+.div__skill .rating {
   width: 14px;
   height: 14px;
   background-color: #172448;
   border-radius: 7px;
   margin: 0 2px;
+}
+@media (max-width: 1024px) {
+  .div__skill .rating {
+    width: 12px;
+    height: 12px;
+    margin: 0 1px;
+  }
+}
+@media (max-width: 480px) {
+  .div__skill .rating {
+    width: 10px;
+    height: 10px;
+    margin: 0;
+    border-radius: 0;
+  }
 }
 .div__skill .active {
   background-color: #3F5CB0;

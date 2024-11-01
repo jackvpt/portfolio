@@ -2,19 +2,36 @@
 /* VARIABLES */
 /* =========================================== */
 .div__creation {
-  width: 30%;
   margin: 20px 0;
-  padding: 20px;
-  border-radius: 20px;
+  padding: 15px 30px;
+  background-color: #172448;
   box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1019607843);
+  border-radius: 20px;
+}
+@media (max-width: 768px) {
+  .div__creation {
+    padding: 10px 20px;
+  }
 }
 .div__creation h4 {
   font-size: 20px;
   font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  color: #B2B3BD;
+  margin-bottom: 25px;
+}
+@media (max-width: 1440px) {
+  .div__creation h4 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .div__creation h4 {
+    margin-bottom: 15px;
+  }
 }
 .div__creation .tags {
-  margin: 15px 0;
+  margin: 15px 0 5px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -25,7 +42,61 @@
 }
 .div__creation .img__creation {
   width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid #B2B3BD;
+  border-radius: 5px;
 }
-.div__creation:hover {
+
+.div__cards {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  height: 200px;
+}
+
+.div__creation:hover .div__cards {
+  transform: rotateY(180deg);
+}
+
+.card__front,
+.card__back {
+  height: 200px;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.card__back {
+  display: flex;
+  flex-direction: column;
+  height: 180px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #0C111C;
+  color: #B2B3BD;
+  border: 1px solid #B2B3BD;
+  transform: rotateY(180deg);
+}
+.card__back-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #EEEEF0;
+  margin-bottom: 5px;
+}
+.card__back-button {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: #3D63DD;
+  color: white;
+  text-align: center;
+  align-content: center;
+  align-self: flex-end;
+  margin-top: auto;
+}
+.card__back-button:hover {
   cursor: pointer;
+  background-color: #172448;
+  color: #93B4FF;
 }/*# sourceMappingURL=Creation.css.map */

@@ -33,6 +33,12 @@ export default function Navbar({ activeSection }) {
         Compétences
       </HashLink>
       <HashLink
+        className={`navbar-link ${activeSection === "education" ? "active" : ""}`}
+        to="#education"
+      >
+        Formation
+      </HashLink>
+      <HashLink
         className={`navbar-link ${activeSection === "contact" ? "active" : ""}`}
         to="#contact"
       >

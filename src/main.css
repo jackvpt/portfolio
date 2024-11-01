@@ -56,5 +56,12 @@ main {
 h3 {
   font-size: 44px;
   font-weight: bold;
+  text-align: center;
   color: #EEEEF0;
+  margin-bottom: 20px;
+}
+@media (max-width: 1024px) {
+  h3 {
+    font-size: 32px;
+  }
 }/*# sourceMappingURL=main.css.map */

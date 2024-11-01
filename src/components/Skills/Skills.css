@@ -9,7 +9,39 @@
   border-radius: 10px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
 }
+.div__skills-categories {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+@media (max-width: 1024px) {
+  .div__skills-categories {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.article__category {
+  width: 45%;
+  border: 1px solid #292A2E;
+  border-radius: 10px;
+}
+@media (max-width: 1024px) {
+  .article__category {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
 .article__category h4 {
+  background-color: #172448;
   color: #EEEEF0;
   font-size: 18px;
+  font-weight: 600;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+@media (max-width: 1024px) {
+  .article__category h4 {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=Skills.css.map */

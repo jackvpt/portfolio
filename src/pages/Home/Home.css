@@ -2,6 +2,12 @@
 /* VARIABLES */
 /* =========================================== */
 .section__navbar {
+  z-index: 99;
   position: sticky;
   top: 0;
+}
+@media (max-width: 1024px) {
+  .section__navbar {
+    position: relative;
+  }
 }/*# sourceMappingURL=Home.css.map */

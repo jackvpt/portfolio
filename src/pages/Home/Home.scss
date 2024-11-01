@@ -1,6 +1,7 @@
 @use "../../variables.scss";
 
 .section__navbar{
+  z-index: 99;
   position:sticky;
   top:0;
 

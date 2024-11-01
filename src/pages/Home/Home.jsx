@@ -4,6 +4,7 @@ import Navbar from "../../components/Navbar/Navbar"
 import Introduction from "../../components/Introduction/Introduction"
 import Creations from "../../components/Creations/Creations"
 import Skills from "../../components/Skills/Skills"
+import Education from "../../components/Education/Education"
 import "./Home.scss"
 
 export default function Home() {
@@ -52,6 +53,9 @@ export default function Home() {
         </section>
         <section id="skills" ref={(el) => (sectionRefs.current.skills = el)}>
           <Skills />
+        </section>
+        <section id="education" ref={(el) => (sectionRefs.current.education = el)}>
+          <Education />
         </section>
       </main>
     </>
