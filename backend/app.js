@@ -45,30 +45,14 @@ app.post('/send-email', multer().none(), (req, res) => { /** Multer must be used
     subject: `Message from portfolio sent by ${name}`,
     text: message,
     html: `
-    <h1 style="color: #3498db; font-size: 24px;">Bienvenue !</h1>
+    <h1 style="color: #3498db; font-size: 24px;">Voici un message depuis le portfolio !</h1>
     <p style="font-family: Arial, sans-serif; color: #333;">
-      Ceci est un e-mail stylisé avec du CSS inline.
+      ${message}
     </p>
-    <a href="https://www.example.com" style="text-decoration: none; color: #e74c3c;">
-      Visitez notre site
+    <a href="https://www.portfolio.com" style="text-decoration: none; color: #e74c3c;">
+      Visiter le site
     </a>
   `
-
-//   html: `
-//     <h1>Bienvenue !</h1>
-//     <p>Voici une image intégrée dans l'e-mail :</p>
-//     <img src="cid:image1" alt="Description de l'image" width="300" />
-//   `,
-//   attachments: [
-//     {
-//       filename: 'image.jpg', // Nom du fichier de l'image
-//       path: './path/to/image.jpg', // Chemin vers l'image locale
-//       cid: 'image1' // CID pour faire référence à cette image dans le HTML
-//     }
-//   ]
-// };
-
-
   };
 
   transporter.sendMail(mailOptions, (error, info) => {

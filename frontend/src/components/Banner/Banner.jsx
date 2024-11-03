@@ -12,7 +12,7 @@ export default function Banner() {
           strings:  ["Jacques Verpoest<span class='span__union'> - </span><span class='span__crlf'><br /></span>Développeur Web"],
           autoStart: true,
           loop: true,
-          pauseFor: 3000,
+          pauseFor: 10000,
         }}
       />
     </div>
