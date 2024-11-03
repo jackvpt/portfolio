@@ -2,10 +2,62 @@
 
 .div__banner {
   margin: 0 auto;
+  position: relative;
 
   img {
     width: 100vw;
     max-height: 300px;
     object-fit: cover;
   }
+
+  .Typewriter {
+    position: absolute;
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    .span__union, .Typewriter__wrapper,.Typewriter__cursor{
+      font-size: 44px;
+      color: orange;
+      @media (max-width: variables.$breakpoint-desktop) {
+        font-size: 36px;
+      }
+      @media (max-width: variables.$breakpoint-mobile) {
+        font-size: 28px;
+      }
+    }
+
+    .span__union {
+      @media (max-width: variables.$breakpoint-desktop) {
+        display: none;
+      }
+    }
+
+    .span__crlf {
+      @media (min-width: variables.$breakpoint-desktop) {
+        display: none;
+      }
+    }
+
+    @media (max-width: variables.$breakpoint-desktop) {
+      width: 700px;
+    }
+  }
+
+  .Typewriter__wrapper {
+    background-color: rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 0px white;
+    font-family: "Source Code Pro", monospace;
+  }
+
+  .Typewriter__cursor {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: orange;
+  }
 }
+

@@ -10,4 +10,18 @@
   .section__navbar {
     position: relative;
   }
+}
+
+.__section {
+  margin-top: 100px;
+}
+@media (max-width: 1024px) {
+  .__section {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .__section {
+    margin-top: 40px;
+  }
 }/*# sourceMappingURL=Home.css.map */

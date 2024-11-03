@@ -3,10 +3,60 @@
 /* =========================================== */
 .div__banner {
   margin: 0 auto;
+  position: relative;
 }
 .div__banner img {
   width: 100vw;
   max-height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.div__banner .Typewriter {
+  position: absolute;
+  width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.div__banner .Typewriter .span__union, .div__banner .Typewriter .Typewriter__wrapper, .div__banner .Typewriter .Typewriter__cursor {
+  font-size: 44px;
+  color: orange;
+}
+@media (max-width: 1024px) {
+  .div__banner .Typewriter .span__union, .div__banner .Typewriter .Typewriter__wrapper, .div__banner .Typewriter .Typewriter__cursor {
+    font-size: 36px;
+  }
+}
+@media (max-width: 480px) {
+  .div__banner .Typewriter .span__union, .div__banner .Typewriter .Typewriter__wrapper, .div__banner .Typewriter .Typewriter__cursor {
+    font-size: 28px;
+  }
+}
+@media (max-width: 1024px) {
+  .div__banner .Typewriter .span__union {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .div__banner .Typewriter .span__crlf {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .div__banner .Typewriter {
+    width: 700px;
+  }
+}
+.div__banner .Typewriter__wrapper {
+  background-color: rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 0px white;
+  font-family: "Source Code Pro", monospace;
+}
+.div__banner .Typewriter__cursor {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: orange;
 }/*# sourceMappingURL=Banner.css.map */

@@ -84,7 +84,27 @@
     margin-bottom: 5px;
   }
 
-  &-button {
+  &-buttons {
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap:10px;
+
+    a {
+      cursor: pointer;
+
+      &:hover {
+        color: variables.$color_solid1_1;
+      }
+
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+
+  &-button-open {
     width: 32px;
     height: 32px;
     border-radius: 16px;
@@ -92,8 +112,6 @@
     color: white;
     text-align: center;
     align-content: center;
-    align-self: flex-end;
-    margin-top: auto;
 
     &:hover {
       cursor: pointer;

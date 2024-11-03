@@ -1,45 +1,52 @@
 @use "../../variables.scss";
 
 .div__skills {
+  position: relative;
   margin: 50px 0;
   padding: 20px;
   background-color: variables.$color_background2_2;
   text-align: center;
   border-radius: 10px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  background-image: url("/assets/banners/colored_code.webp");
+  height: auto;
+  background-position: center;
+  background-size: cover;
 
   &-categories {
     display: flex;
     justify-content: center;
-    gap:50px;
+    gap: 50px;
 
     @media (max-width: variables.$breakpoint-desktop) {
       flex-direction: column;
-      gap:20px;
+      gap: 20px;
     }
   }
 }
 
 .article__category {
-  width:45%;
+  z-index: 90;
+  width: 45%;
   border: 1px solid variables.$color_interactive2_2;
   border-radius: 10px;
+  background-color: rgba(variables.$color_background2_1,0.8);
 
   @media (max-width: variables.$breakpoint-desktop) {
-    width:85%;
+    width: 85%;
     margin: 0 auto;
   }
 
-  h4{
+  h4 {
     background-color: variables.$color_interactive1_1;
     color: variables.$color_accessible2_2;
-    font-size:18px;
+    font-size: 18px;
     font-weight: 600;
-    padding:10px;
+    padding: 10px;
     margin-bottom: 10px;
 
     @media (max-width: variables.$breakpoint-desktop) {
-      font-size:14px;
+      font-size: 14px;
     }
   }
 }

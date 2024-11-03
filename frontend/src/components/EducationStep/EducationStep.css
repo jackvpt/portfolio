@@ -3,15 +3,29 @@
 /* =========================================== */
 .div__step {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 20px;
+}
+@media (max-width: 1024px) {
+  .div__step {
+    flex-direction: column;
+    gap: 5px;
+  }
 }
 .div__step h4 {
+  width: 350px;
   color: #EEEEF0;
   font-family: "Michroma";
   font-size: 16px;
   font-weight: 700;
+  text-align: right;
+}
+@media (max-width: 1024px) {
+  .div__step h4 {
+    text-align: center;
+  }
 }
 .div__step-img {
   display: flex;
@@ -22,12 +36,22 @@
   background-color: #1D2E61;
   border-radius: 80px;
 }
+@media (max-width: 1024px) {
+  .div__step-img {
+    order: 3;
+  }
+}
 .div__step-img .img__step {
   width: 80%;
 }
 .div__step-text {
-  text-align: center;
-  margin: 10px 0;
+  width: 350px;
+  text-align: left;
   color: #B2B3BD;
   font-size: 14px;
+}
+@media (max-width: 1024px) {
+  .div__step-text {
+    text-align: center;
+  }
 }/*# sourceMappingURL=EducationStep.css.map */

@@ -1,32 +1,57 @@
 import { useState } from "react"
+import { faCircleCheck } from "@fortawesome/free-solid-svg-icons"
+import { faCircleXmark } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons"
+
 import "./Contact.scss"
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
+  const [data, setData] = useState({
     name: "",
     email: "",
     message: "",
   })
+  const [emailValid, setEmailValid] = useState(false)
+
   const [status, setStatus] = useState("")
 
   const handleChange = (e) => {
     const { name, value } = e.target
-    setFormData({ ...formData, [name]: value })
+    setData({ ...data, [name]: value })
   }
 
   const handleSubmit = async (e) => {
+    const validateEmail = (email) => {
+      const regEx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+      return regEx.test(String(email).toLowerCase())
+    }
+
+    setEmailValid = validateEmail(data.email)
+
+    const formData = new FormData()
+    formData.append("name", data.name)
+    formData.append("email", data.email)
+    formData.append("message", data.message)
+
     e.preventDefault()
     try {
-      const response = await axios.post(
-        "http://localhost:5000/send-email",
-        formData
-      )
-      if (response.data.success) {
-        setStatus("Message envoyé avec succès")
-        setFormData({ name: "", email: "", message: "" })
+      const response = await fetch("http://localhost:4000/send-email", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+        },
+        body: formData,
+      })
+
+      if (!response.ok) {
+        throw new Error("Error while sending email")
       }
+
+      setStatus("Message envoyé avec succès")
+      setData({ name: "", email: "", message: "" })
     } catch (error) {
-      setStatus("Erreur lors de l’envoi du message")
+      alert(error)
     }
   }
 
@@ -39,7 +64,7 @@ export default function Contact() {
           type="text"
           name="name"
           placeholder="Nom"
-          value={formData.name}
+          value={data.name}
           onChange={handleChange}
           required
         />
@@ -48,7 +73,7 @@ export default function Contact() {
           type="email"
           name="email"
           placeholder="Email"
-          value={formData.email}
+          value={data.email}
           onChange={handleChange}
           required
         />
@@ -56,13 +81,37 @@ export default function Contact() {
         <textarea
           name="message"
           placeholder="Message"
-          value={formData.message}
+          value={data.message}
           onChange={handleChange}
           required
         />
-        <button type="submit">Envoyer</button>
+        <button type="submit">
+        <FontAwesomeIcon
+            icon={faPaperPlane}
+            size="xl"
+          />
+          Envoyer</button>
       </form>
-      {status && <p>{status}</p>}
+      {status && (
+        <div className="emailSent">
+          <FontAwesomeIcon
+            icon={faCircleCheck}
+            size="xl"
+            style={{ color: "green" }}
+          />
+          {status}
+        </div>
+      )}
+      {data.email & !emailValid && (
+        <div className="emailSent">
+          <FontAwesomeIcon
+            icon={faCircleXmark}
+            size="xl"
+            style={{ color: "red" }}
+          />
+          L'adresse email n'est pas valide
+        </div>
+      )}
     </div>
   )
 }

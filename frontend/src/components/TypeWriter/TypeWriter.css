@@ -1,0 +1,13 @@
+/* =========================================== */
+/* VARIABLES */
+/* =========================================== */
+.Typewriter__wrapper {
+  color: green;
+  font-size: 48px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.Typewriter__cursor {
+  color: red;
+  font-size: 48px;
+}/*# sourceMappingURL=TypeWriter.css.map */

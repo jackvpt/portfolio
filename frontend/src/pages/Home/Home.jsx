@@ -40,25 +40,25 @@ export default function Home() {
         <section className="section__navbar">
           <Navbar activeSection={activeSection} />
         </section>
-        <section
+        <section className="__section"
           id="introduction"
           ref={(el) => (sectionRefs.current.introduction = el)}
         >
           <Introduction />
         </section>
-        <section
+        <section className="__section"
           id="creations"
           ref={(el) => (sectionRefs.current.creations = el)}
         >
           <Creations />
         </section>
-        <section id="skills" ref={(el) => (sectionRefs.current.skills = el)}>
+        <section className="__section" id="skills" ref={(el) => (sectionRefs.current.skills = el)}>
           <Skills />
         </section>
-        <section id="education" ref={(el) => (sectionRefs.current.education = el)}>
+        <section className="__section" id="education" ref={(el) => (sectionRefs.current.education = el)}>
           <Education />
         </section>
-        <section id="contact" ref={(el) => (sectionRefs.current.contact = el)}>
+        <section className="__section" id="contact" ref={(el) => (sectionRefs.current.contact = el)}>
           <Contact />
         </section>
       </main>

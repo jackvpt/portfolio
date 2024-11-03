@@ -1,50 +1,65 @@
 @use "../../variables.scss";
 
-.div__contact{
+.div__contact {
   margin: 50px 0;
   padding: 20px;
   background-color: variables.$color_background2_2;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-radius: 10px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  background-image: url("/assets/banners/world_is_code.webp");
+  width: 100%;
+  height: auto;
+  background-position: center;
+  background-size: cover;
 
-  form{
+  form {
     display: flex;
     flex-direction: column;
-    gap:10px;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+    max-width: 800px;
   }
 
-  label{
-    color:white;
-    font-size:14px;
+  label {
+    color: white;
+    font-size: 14px;
     align-self: flex-start;
   }
 
-  input, textarea{
-    height:40px;
-    padding:5px 10px;
+  input,
+  textarea {
+    height: 40px;
+    padding: 5px 10px;
+    margin: 0 15px;
     border-radius: 5px;
     background-color: variables.$color_interactive1_1;
-    border:1px solid variables.$color_borders2_2;
+    border: 1px solid variables.$color_borders2_2;
     color: variables.$color_accessible2_2;
-    font-size:14px;
+    font-size: 14px;
     margin-bottom: 20px;
   }
 
-  textarea{
-    height:80px;
+  textarea {
+    height: 80px;
   }
 
-  button{
-    width:100px;
-    height:40px;
-    padding:5px 10px;
+  button {
+    display: flex;
+    align-items: center;
+    gap:10px;
+    height: 40px;
+    padding: 5px 10px;
     border-radius: 5px;
     background-color: variables.$color_solid1_1;
-    border:1px solid variables.$color_borders2_2;
+    border: 1px solid variables.$color_borders2_2;
     color: variables.$color_accessible2_2;
-    font-size:14px;
-    font-weight:700;
+    font-size: 14px;
+    font-weight: 700;
+    align-self: center;
 
     &:hover {
       cursor: pointer;
@@ -52,4 +67,16 @@
       color: variables.$color_accessible1_1;
     }
   }
+}
+
+.emailSent {
+  display: flex;
+  gap: 10px;
+  background-color: variables.$color_accessible1_2;
+  color:black;
+  font-weight:700;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  align-items: center;
 }

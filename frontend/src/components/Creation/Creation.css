@@ -84,7 +84,23 @@
   color: #EEEEF0;
   margin-bottom: 5px;
 }
-.card__back-button {
+.card__back-buttons {
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+.card__back-buttons a {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+.card__back-buttons a:hover {
+  color: #3D63DD;
+}
+.card__back-button-open {
   width: 32px;
   height: 32px;
   border-radius: 16px;
@@ -92,10 +108,8 @@
   color: white;
   text-align: center;
   align-content: center;
-  align-self: flex-end;
-  margin-top: auto;
 }
-.card__back-button:hover {
+.card__back-button-open:hover {
   cursor: pointer;
   background-color: #172448;
   color: #93B4FF;

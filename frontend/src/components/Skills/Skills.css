@@ -2,12 +2,17 @@
 /* VARIABLES */
 /* =========================================== */
 .div__skills {
+  position: relative;
   margin: 50px 0;
   padding: 20px;
   background-color: #19191B;
   text-align: center;
   border-radius: 10px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  background-image: url("/assets/banners/colored_code.webp");
+  height: auto;
+  background-position: center;
+  background-size: cover;
 }
 .div__skills-categories {
   display: flex;
@@ -22,9 +27,11 @@
 }
 
 .article__category {
+  z-index: 90;
   width: 45%;
   border: 1px solid #292A2E;
   border-radius: 10px;
+  background-color: rgba(17, 17, 19, 0.8);
 }
 @media (max-width: 1024px) {
   .article__category {
