@@ -1,0 +1,20 @@
+[
+  {
+    "category": "frontend",
+    "skills": [
+      { "name": "HTML", "rating": 10 },
+      { "name": "CSS", "rating": 9 },
+      { "name": "Javascript", "rating": 9 },
+      { "name": "React", "rating": 8 },
+      { "name": "Sass", "rating": 8 }
+    ]
+  },
+  {
+    "category": "backend",
+    "skills": [
+      { "name": "MongoDB", "rating": 7 },
+      { "name": "Express", "rating": 7 },
+      { "name": "NodeJS", "rating": 8 }
+    ]
+  }
+]
