@@ -7,9 +7,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Michroma:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script type="text/javascript">
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+        }
+      })(window.location);
+    </script>
+
+
     <title>Jacques Verpoest - Portfolio</title>
     <script type="module" crossorigin src="/portfolio/assets/index-B_Cq8LSc.js"></script>
     <link rel="stylesheet" crossorigin href="/portfolio/assets/index-CjU7ftHe.css">
