@@ -21,10 +21,26 @@
   font-size: 16px;
   font-weight: 700;
   text-align: right;
+  order: 0;
 }
 @media (max-width: 1024px) {
   .div__step h4 {
     text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .div__step h4 {
+    width: 280px;
+  }
+}
+.div__step .titleDisplayRight {
+  order: 2;
+  text-align: left;
+}
+@media (max-width: 1024px) {
+  .div__step .titleDisplayRight {
+    text-align: center;
+    order: 0;
   }
 }
 .div__step-img {
@@ -35,6 +51,7 @@
   height: 160px;
   background-color: #1D2E61;
   border-radius: 80px;
+  order: 1;
 }
 @media (max-width: 1024px) {
   .div__step-img {
@@ -49,9 +66,27 @@
   text-align: left;
   color: #B2B3BD;
   font-size: 14px;
+  order: 2;
 }
 @media (max-width: 1024px) {
   .div__step-text {
     text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .div__step-text {
+    width: 280px;
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+}
+.div__step .textDisplayLeft {
+  order: 0;
+  text-align: right;
+}
+@media (max-width: 1024px) {
+  .div__step .textDisplayLeft {
+    text-align: center;
+    order: 2;
   }
 }/*# sourceMappingURL=EducationStep.css.map */

@@ -1,17 +1,20 @@
-import { useState } from "react"
+import { useState, useRef } from "react"
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons"
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons"
-
+import emailjs from "@emailjs/browser"
 import "./Contact.scss"
 
 export default function Contact() {
+  const form = useRef()
+
   const [data, setData] = useState({
-    name: "",
-    email: "",
+    user_name: "",
+    user_email: "",
     message: "",
   })
+
   const [emailValid, setEmailValid] = useState(false)
 
   const [status, setStatus] = useState("")
@@ -22,34 +25,37 @@ export default function Contact() {
   }
 
   const handleSubmit = async (e) => {
+    e.preventDefault()
+
     const validateEmail = (email) => {
       const regEx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
       return regEx.test(String(email).toLowerCase())
     }
 
-    setEmailValid = validateEmail(data.email)
+    setEmailValid(validateEmail(form.current.user_email.value))
 
-    const formData = new FormData()
-    formData.append("name", data.name)
-    formData.append("email", data.email)
-    formData.append("message", data.message)
-
-    e.preventDefault()
     try {
-      const response = await fetch("http://localhost:4000/send-email", {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-        },
-        body: formData,
-      })
+      const publicKey = "glHT1LLKiJ-mXvYSP"
+      const serviceId = "service_wuqf5ls"
+      const templateId = "template_04cmwx6"
 
-      if (!response.ok) {
-        throw new Error("Error while sending email")
-      }
+      const response = await emailjs.sendForm(
+        serviceId,
+        templateId,
+        form.current,
+        {
+          publicKey: publicKey,
+        }
+      )
+
+      if (response.text != "OK") throw new Error("Error while sending email")
 
       setStatus("Message envoyé avec succès")
-      setData({ name: "", email: "", message: "" })
+      console.log("Message sent successfully")
+
+      form.current.reset()
+
+      setData({ user_name: "", user_email: "", message: "" })
     } catch (error) {
       alert(error)
     }
@@ -58,11 +64,11 @@ export default function Contact() {
   return (
     <div className="div__contact">
       <h3>CONTACT</h3>
-      <form onSubmit={handleSubmit}>
+      <form ref={form} onSubmit={handleSubmit}>
         <label>Votre nom</label>
         <input
           type="text"
-          name="name"
+          name="user_name"
           placeholder="Nom"
           value={data.name}
           onChange={handleChange}
@@ -71,7 +77,7 @@ export default function Contact() {
         <label>Votre email</label>
         <input
           type="email"
-          name="email"
+          name="user_email"
           placeholder="Email"
           value={data.email}
           onChange={handleChange}
@@ -86,11 +92,11 @@ export default function Contact() {
           required
         />
         <button type="submit">
-        <FontAwesomeIcon
-            icon={faPaperPlane}
-            size="xl"
-          />
-          Envoyer</button>
+          <span className="iconEmail">
+            <FontAwesomeIcon icon={faPaperPlane} size="xl" />
+          </span>
+          Envoyer
+        </button>
       </form>
       {status && (
         <div className="emailSent">
@@ -102,7 +108,7 @@ export default function Contact() {
           {status}
         </div>
       )}
-      {data.email & !emailValid && (
+      {data.user_email & !emailValid && (
         <div className="emailSent">
           <FontAwesomeIcon
             icon={faCircleXmark}

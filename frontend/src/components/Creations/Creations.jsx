@@ -19,7 +19,7 @@ export default function Creations() {
     1440: 4,
     1024: 3,
     768: 2,
-    480: 1,
+    600: 1,
   }
 
   return (

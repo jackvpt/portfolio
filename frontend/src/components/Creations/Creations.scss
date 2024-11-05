@@ -5,6 +5,11 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: variables.$breakpoint-tablet) {
+    padding: 0;
+
+  }
 }
 
 .div__projects {

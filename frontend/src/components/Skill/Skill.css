@@ -31,7 +31,7 @@
 @media (max-width: 1024px) {
   .div__skill-name {
     width: 80px;
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 .div__skill-ratings {

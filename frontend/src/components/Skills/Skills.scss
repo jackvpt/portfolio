@@ -32,8 +32,12 @@
   border-radius: 10px;
   background-color: rgba(variables.$color_background2_1,0.8);
 
+  @media (max-width: variables.$breakpoint-desktop-large) {
+    width: 49%;
+  }
+
   @media (max-width: variables.$breakpoint-desktop) {
-    width: 85%;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -46,6 +50,10 @@
     margin-bottom: 10px;
 
     @media (max-width: variables.$breakpoint-desktop) {
+      font-size: 16px;
+    }
+
+    @media (max-width: variables.$breakpoint-tablet) {
       font-size: 14px;
     }
   }

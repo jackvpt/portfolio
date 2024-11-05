@@ -31,6 +31,11 @@ html {
     padding: 0 10px;
   }
 }
+@media (max-width: 480px) {
+  html {
+    padding: 0;
+  }
+}
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -63,5 +68,10 @@ h3 {
 @media (max-width: 1024px) {
   h3 {
     font-size: 32px;
+  }
+}
+@media (max-width: 480px) {
+  h3 {
+    font-size: 24px;
   }
 }/*# sourceMappingURL=main.css.map */

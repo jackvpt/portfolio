@@ -33,9 +33,14 @@
   border-radius: 10px;
   background-color: rgba(17, 17, 19, 0.8);
 }
+@media (max-width: 1440px) {
+  .article__category {
+    width: 49%;
+  }
+}
 @media (max-width: 1024px) {
   .article__category {
-    width: 85%;
+    width: 100%;
     margin: 0 auto;
   }
 }
@@ -48,6 +53,11 @@
   margin-bottom: 10px;
 }
 @media (max-width: 1024px) {
+  .article__category h4 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
   .article__category h4 {
     font-size: 14px;
   }
