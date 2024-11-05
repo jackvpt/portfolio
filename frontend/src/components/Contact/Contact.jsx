@@ -1,3 +1,6 @@
+import dotenv from "dotenv"
+ /** Load environnement variables from .env file to process.env */
+
 import { useState, useRef } from "react"
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons"
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons"
@@ -35,9 +38,13 @@ export default function Contact() {
     setEmailValid(validateEmail(form.current.user_email.value))
 
     try {
-      const publicKey = "glHT1LLKiJ-mXvYSP"
-      const serviceId = "service_wuqf5ls"
-      const templateId = "template_04cmwx6"
+      // const publicKey = "glHT1LLKiJ-mXvYSP"
+      // const serviceId = "service_wuqf5ls"
+      // const templateId = "template_04cmwx6"
+
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
 
       const response = await emailjs.sendForm(
         serviceId,
