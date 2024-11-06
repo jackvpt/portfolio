@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from "react"
-import { Element } from "react-scroll"
 import Banner from "../../components/Banner/Banner"
 import Navbar from "../../components/Navbar/Navbar"
 import Introduction from "../../components/Introduction/Introduction"
@@ -69,15 +68,13 @@ export default function Home() {
         >
           <Education />
         </section>
-        <Element name="contact" id="contact">
-          <section
-            className="__section"
-            id="contact"
-            ref={(el) => (sectionRefs.current.contact = el)}
-          >
-            <Contact />
-          </section>
-        </Element>
+        <section
+          className="__section"
+          id="contact"
+          ref={(el) => (sectionRefs.current.contact = el)}
+        >
+          <Contact />
+        </section>
       </main>
     </>
   )
