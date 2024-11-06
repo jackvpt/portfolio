@@ -9,7 +9,7 @@
 }
 .container__error h1 {
   font-size: 288px;
-  color: #134074;
+  color: #93B4FF;
   margin: 80px auto;
 }
 @media (max-width: 768px) {
@@ -24,7 +24,7 @@
 }
 .container__error h2 {
   font-size: 36px;
-  color: #134074;
+  color: #D5E2FF;
   margin: 0 auto;
   text-align: center;
   font-weight: 500;
@@ -42,7 +42,7 @@
 }
 .container__error-link {
   font-size: 18px;
-  color: black;
+  color: #93B4FF;
   text-decoration: underline;
   text-align: center;
   margin: 120px auto 100px;

@@ -7,7 +7,7 @@ export default function Creations() {
   // const [filter, setFilter] = useState("all")
 
   // Fetch call returns 'data', 'isLoading' and 'error'
-  const fetchResult = useFetch("/data/creations.json")
+  const fetchResult = useFetch(`${import.meta.env.BASE_URL}data/creations.json`)
 
   if (!fetchResult.data) return
 
@@ -24,7 +24,7 @@ export default function Creations() {
 
   return (
     <section className="div__creations">
-      <h3>RÉALISATIONS</h3>
+      <h2>RÉALISATIONS</h2>
       <Masonry
         breakpointCols={breakpointColumnsObj}
         className="div__projects"

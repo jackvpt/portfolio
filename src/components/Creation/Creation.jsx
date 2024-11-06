@@ -24,12 +24,14 @@ export default function Creation({ creation }) {
         <CreationModal closeModal={closeModal} creation={creation} />
       )}
 
-      <h4>{creation.name}</h4>
+      <h3>{creation.name}</h3>
       <div className="div__cards">
         <div className="card__front">
           <img
             className="img__creation"
-            src={`/assets/creations/${creation.image}_thumbnail.webp`}
+            src={`${import.meta.env.BASE_URL}assets/creations/${
+              creation.image
+            }_thumbnail.webp`}
             alt={creation.name}
           ></img>
         </div>
@@ -37,14 +39,22 @@ export default function Creation({ creation }) {
           <div className="card__back-title">{creation.title}</div>
           <div className="card__back-description">{creation.description}</div>
           <div className="card__back-buttons">
+            {creation.website && (
+              <a
+                href={creation.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Site Web"
+              >
+                <FontAwesomeIcon icon={faGlobe} size="2xl" />
+              </a>
+            )}
             <a
-              href={creation.website}
+              href={creation.github}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Lien GitHub"
             >
-              <FontAwesomeIcon icon={faGlobe} size="2xl" />
-            </a>
-            <a href={creation.github} target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub} size="2xl" />
             </a>
             <div className="card__back-button-open" onClick={openModal}>
@@ -58,7 +68,9 @@ export default function Creation({ creation }) {
           <img
             key={index}
             className="img__tag"
-            src={`/assets/skills/${skill.toLocaleLowerCase()}.webp`}
+            src={`${
+              import.meta.env.BASE_URL
+            }assets/skills/${skill.toLocaleLowerCase()}.webp`}
             alt={skill}
           ></img>
         ))}

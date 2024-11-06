@@ -3,13 +3,13 @@ import "./EducationStep.scss"
 export default function EducationStep({ step }) {
   return (
     <section className="div__step">
-      <h4 className={step.rank % 2 != 0 ? "titleDisplayRight" : ""}>
+      <h3 className={step.rank % 2 != 0 ? "titleDisplayRight" : ""}>
         {step.year}
-      </h4>
+      </h3>
       <div className="div__step-img">
         <img
           className="img__step"
-          src={`/assets/education/${step.image}`}
+          src={`${import.meta.env.BASE_URL}assets/education/${step.image}`}
           alt={step.image}
         ></img>
       </div>

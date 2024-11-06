@@ -1,6 +1,4 @@
 import dotenv from "dotenv"
- /** Load environnement variables from .env file to process.env */
-
 import { useState, useRef } from "react"
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons"
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons"
@@ -38,10 +36,6 @@ export default function Contact() {
     setEmailValid(validateEmail(form.current.user_email.value))
 
     try {
-      // const publicKey = "glHT1LLKiJ-mXvYSP"
-      // const serviceId = "service_wuqf5ls"
-      // const templateId = "template_04cmwx6"
-
       const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID
       const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
@@ -70,29 +64,32 @@ export default function Contact() {
 
   return (
     <div className="div__contact">
-      <h3>CONTACT</h3>
+      <h2>CONTACT</h2>
       <form ref={form} onSubmit={handleSubmit}>
-        <label>Votre nom</label>
+        <label htmlFor="user_name">Votre nom</label>
         <input
           type="text"
           name="user_name"
+          id="user_name"
           placeholder="Nom"
           value={data.name}
           onChange={handleChange}
           required
         />
-        <label>Votre email</label>
+        <label htmlFor="user_email">Votre email</label>
         <input
           type="email"
           name="user_email"
+          id="user_email"
           placeholder="Email"
           value={data.email}
           onChange={handleChange}
           required
         />
-        <label>Votre message</label>
+        <label htmlFor="message">Votre message</label>
         <textarea
           name="message"
+          id="message"
           placeholder="Message"
           value={data.message}
           onChange={handleChange}

@@ -14,7 +14,7 @@
     gap: 5px;
   }
 }
-.div__step h4 {
+.div__step h3 {
   width: 350px;
   color: #EEEEF0;
   font-family: "Michroma";
@@ -24,12 +24,12 @@
   order: 0;
 }
 @media (max-width: 1024px) {
-  .div__step h4 {
+  .div__step h3 {
     text-align: center;
   }
 }
 @media (max-width: 480px) {
-  .div__step h4 {
+  .div__step h3 {
     width: 280px;
   }
 }

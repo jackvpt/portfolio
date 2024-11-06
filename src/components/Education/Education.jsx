@@ -5,7 +5,7 @@ import "./Education.scss"
 
 export default function Education() {
   // Fetch call returns 'data', 'isLoading' and 'error'
-  const fetchResult = useFetch("/data/education.json")
+  const fetchResult = useFetch(`${import.meta.env.BASE_URL}data/education.json`)
 
   if (!fetchResult.data) return
 
@@ -14,7 +14,7 @@ export default function Education() {
 
   return (
     <section className="div__education">
-      <h3>FORMATION</h3>
+      <h2>FORMATION</h2>
       <div className="div__education-steps">
         {education
           .sort((a, b) => b.rank - a.rank)

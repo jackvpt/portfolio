@@ -9,11 +9,17 @@ export default function CreationModal({ closeModal, creation }) {
     <div className="modal_window">
       <div className="modal_container">
         <div className="modal_header">
-          <div className="modal_website">
-            <a href={creation.website} target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faGlobe} size="2xl" />
-            </a>
-          </div>
+          {creation.website && (
+            <div className="modal_website">
+              <a
+                href={creation.website}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={faGlobe} size="2xl" />
+              </a>
+            </div>
+          )}
           <div className="modal_github">
             <a href={creation.github} target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub} size="2xl" />
@@ -26,7 +32,9 @@ export default function CreationModal({ closeModal, creation }) {
         <div className="modal_content">
           <img
             className="modal_img"
-            src={`/assets/creations/${creation.image}_page.webp`}
+            src={`${import.meta.env.BASE_URL}/assets/creations/${
+              creation.image
+            }_page.webp`}
             alt={creation.name}
           ></img>
         </div>

@@ -5,8 +5,8 @@ export default function Skill({ skill }) {
     <div className="div__skill">
       <div className="div__skill-img">
         <img
-          src={`/assets/skills/${skill.name.toLocaleLowerCase()}.webp`}
-          alt={skill.name}
+          src={`${import.meta.env.BASE_URL}assets/skills/${skill.name.toLocaleLowerCase()}.webp`}
+          alt=""
         ></img>
       </div>
       <div className="div__skill-name">{skill.name}</div>

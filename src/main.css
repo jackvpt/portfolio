@@ -58,7 +58,7 @@ main {
   max-width: 1440px;
 }
 
-h3 {
+h2 {
   font-size: 44px;
   font-weight: bold;
   text-align: center;
@@ -66,12 +66,12 @@ h3 {
   margin-bottom: 20px;
 }
 @media (max-width: 1024px) {
-  h3 {
+  h2 {
     font-size: 32px;
   }
 }
 @media (max-width: 480px) {
-  h3 {
+  h2 {
     font-size: 24px;
   }
 }/*# sourceMappingURL=main.css.map */

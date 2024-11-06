@@ -9,7 +9,7 @@
   text-align: center;
   border-radius: 10px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-  background-image: url("/assets/banners/colored_code.webp");
+  background-image: url("/assets/images/colored_code.webp");
   height: auto;
   background-position: center;
   background-size: cover;
@@ -44,7 +44,7 @@
     margin: 0 auto;
   }
 }
-.article__category h4 {
+.article__category h3 {
   background-color: #172448;
   color: #EEEEF0;
   font-size: 18px;
@@ -53,12 +53,12 @@
   margin-bottom: 10px;
 }
 @media (max-width: 1024px) {
-  .article__category h4 {
+  .article__category h3 {
     font-size: 16px;
   }
 }
 @media (max-width: 768px) {
-  .article__category h4 {
+  .article__category h3 {
     font-size: 14px;
   }
 }/*# sourceMappingURL=Skills.css.map */

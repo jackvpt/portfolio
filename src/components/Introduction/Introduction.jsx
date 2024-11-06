@@ -3,7 +3,7 @@ import "./Introduction.scss"
 export default function Introduction() {
   return (
     <section className="div__introduction">
-      <h3>PRÉSENTATION</h3>
+      <h2>PRÉSENTATION</h2>
       <p>
         <br/>
         Passionné par le développement informatique depuis toujours, j’ai

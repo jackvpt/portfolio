@@ -4,7 +4,7 @@ import "./Skills.scss"
 
 export default function Skills() {
   // Fetch call returns 'data', 'isLoading' and 'error'
-  const fetchResult = useFetch("/data/skills.json")
+  const fetchResult = useFetch(`${import.meta.env.BASE_URL}data/skills.json`)
 
   if (!fetchResult.data) return
 
@@ -16,16 +16,16 @@ export default function Skills() {
 
   return (
     <section className="div__skills">
-      <h3>COMPÉTENCES</h3>
+      <h2>COMPÉTENCES</h2>
       <div className="div__skills-categories">
         <article className="article__category">
-          <h4>Front End</h4>
+          <h3>Front End</h3>
           {skillsFront.map((skill, index) => (
             <Skill key={index} skill={skill} />
           ))}
         </article>
         <article className="article__category">
-          <h4>Back End</h4>
+          <h3>Back End</h3>
           {skillsBack.map((skill, index) => (
             <Skill key={index} skill={skill} />
           ))}
