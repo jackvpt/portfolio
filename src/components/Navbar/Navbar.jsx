@@ -24,37 +24,37 @@ export default function Navbar({ activeSection }) {
       <nav className={`navbar__links ${isOpen ? "navbar__links-open" : ""}`}>
         <HashLink
           className={`link ${activeSection === "home" ? "active" : ""}`}
-          to="#home"
+          smooth to="#home"
         >
           Accueil
         </HashLink>
         <HashLink
           className={`link ${activeSection === "introduction" ? "active" : ""}`}
-          to="#introduction"
+          smooth to="#introduction"
         >
           Présentation
         </HashLink>
         <HashLink
           className={`link ${activeSection === "creations" ? "active" : ""}`}
-          to="#creations"
+          smooth to="#creations"
         >
           Réalisations
         </HashLink>
         <HashLink
           className={`link ${activeSection === "skills" ? "active" : ""}`}
-          to="#skills"
+          smooth to="#skills"
         >
           Compétences
         </HashLink>
         <HashLink
           className={`link ${activeSection === "education" ? "active" : ""}`}
-          to="#education"
+          smooth to="#education"
         >
           Formation
         </HashLink>
         <HashLink
           className={`link ${activeSection === "contact" ? "active" : ""}`}
-          to="#contact"
+          smooth to="#contact"
         >
           Contact
         </HashLink>

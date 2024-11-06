@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react"
+import { Element } from "react-scroll"
 import Banner from "../../components/Banner/Banner"
 import Navbar from "../../components/Navbar/Navbar"
 import Introduction from "../../components/Introduction/Introduction"
@@ -40,27 +41,43 @@ export default function Home() {
         <section className="section__navbar">
           <Navbar activeSection={activeSection} />
         </section>
-        <section className="__section"
+        <section
+          className="__section"
           id="introduction"
           ref={(el) => (sectionRefs.current.introduction = el)}
         >
           <Introduction />
         </section>
-        <section className="__section"
+        <section
+          className="__section"
           id="creations"
           ref={(el) => (sectionRefs.current.creations = el)}
         >
           <Creations />
         </section>
-        <section className="__section" id="skills" ref={(el) => (sectionRefs.current.skills = el)}>
+        <section
+          className="__section"
+          id="skills"
+          ref={(el) => (sectionRefs.current.skills = el)}
+        >
           <Skills />
         </section>
-        <section className="__section" id="education" ref={(el) => (sectionRefs.current.education = el)}>
+        <section
+          className="__section"
+          id="education"
+          ref={(el) => (sectionRefs.current.education = el)}
+        >
           <Education />
         </section>
-        <section className="__section" id="contact" ref={(el) => (sectionRefs.current.contact = el)}>
-          <Contact />
-        </section>
+        <Element name="contact" id="contact">
+          <section
+            className="__section"
+            id="contact"
+            ref={(el) => (sectionRefs.current.contact = el)}
+          >
+            <Contact />
+          </section>
+        </Element>
       </main>
     </>
   )
