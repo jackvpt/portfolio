@@ -13,6 +13,10 @@
   background-position: center;
   background-size: cover;
 
+  @media (max-width: variables.$breakpoint-tablet) {
+    margin: 10px 0;
+  }
+
   &-categories {
     display: flex;
     justify-content: center;

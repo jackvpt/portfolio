@@ -1,6 +1,31 @@
 @use "../../variables.scss";
 
 .navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar__burgerIcon {
+  display: none;
+  align-self: flex-end;
+  width: 40px;
+  height: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: variables.$color_solid1_1;
+  color:variables.$color_accessible2_2;
+  border: 1px solid variables.$color_borders2_1;
+  border-radius: 5px;
+  cursor: pointer;
+
+  @media (max-width: variables.$breakpoint-desktop) {
+    display: flex;
+  }
+}
+
+.navbar__links {
   margin: 0 auto;
   height: 50px;
   display: flex;
@@ -13,11 +38,17 @@
 
   @media (max-width: variables.$breakpoint-desktop) {
     flex-direction: column;
-    position:relative;
-    height:auto;
+    position: relative;
+    height: auto;
+
+    &-open {
+      display: none;
+    }
   }
 
-  &-link {
+
+
+  .link {
     text-align: center;
     text-decoration: none;
     font-size: 18px;
@@ -26,7 +57,7 @@
     border-bottom: 0.5px solid variables.$color_interactive2_3;
 
     @media (max-width: variables.$breakpoint-desktop) {
-      width:100%;
+      width: 100%;
     }
 
     &:hover {
@@ -36,8 +67,8 @@
   }
 
   .active {
-    color:white;
-    font-weight:700;
+    color: white;
+    font-weight: 700;
     border-bottom: 3px solid variables.$color_solid1_1;
   }
 }
