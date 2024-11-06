@@ -13,48 +13,52 @@ export default function Navbar({ activeSection }) {
 
   return (
     <div className="navbar">
-      <div
-        className={`navbar__burgerIcon`}
-        onClick={toggleMenu}
-      >
-        <span>
-          <FontAwesomeIcon icon={faBars} size="2xl" />
-        </span>
+      <div className="navbar__burgerIcon" onClick={toggleMenu}>
+        <div className={`burger-bar ${isOpen ? "close" : "open"}`}></div>
+        <div className={`burger-bar ${isOpen ? "close" : "open"}`}></div>
+        <div className={`burger-bar ${isOpen ? "close" : "open"}`}></div>
       </div>
-      <nav className={`navbar__links ${isOpen ? "navbar__links-open" : ""}`}>
+
+      <nav className={`navbar__links ${isOpen ? "navbar__links-close" : ""}`}>
         <HashLink
           className={`link ${activeSection === "home" ? "active" : ""}`}
-          smooth to="#home"
+          smooth
+          to="#home"
         >
           Accueil
         </HashLink>
         <HashLink
           className={`link ${activeSection === "introduction" ? "active" : ""}`}
-          smooth to="#introduction"
+          smooth
+          to="#introduction"
         >
           Présentation
         </HashLink>
         <HashLink
           className={`link ${activeSection === "creations" ? "active" : ""}`}
-          smooth to="#creations"
+          smooth
+          to="#creations"
         >
           Réalisations
         </HashLink>
         <HashLink
           className={`link ${activeSection === "skills" ? "active" : ""}`}
-          smooth to="#skills"
+          smooth
+          to="#skills"
         >
           Compétences
         </HashLink>
         <HashLink
           className={`link ${activeSection === "education" ? "active" : ""}`}
-          smooth to="#education"
+          smooth
+          to="#education"
         >
           Formation
         </HashLink>
         <HashLink
           className={`link ${activeSection === "contact" ? "active" : ""}`}
-          smooth to="#contact"
+          smooth
+          to="#contact"
         >
           Contact
         </HashLink>
