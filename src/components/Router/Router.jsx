@@ -10,7 +10,6 @@ export default function Router() {
       <BrowserRouter>
         <div>
           <Routes>
-          <Route path="/jacquesverpoest/" element={<Home />} />
             <Route path="/" element={<Home />} />
             <Route path="*" element={<Error />} />
           </Routes>
