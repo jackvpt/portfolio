@@ -13,7 +13,7 @@ export default function Contact() {
   const [data, setData] = useState({
     user_name: "",
     user_email: "",
-    message: "",
+    message: ""
   })
 
   const [emailValid, setEmailValid] = useState(false)
@@ -35,17 +35,17 @@ export default function Contact() {
 
     setEmailValid(validateEmail(form.current.user_email.value))
 
-    try {
-      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID
-      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
 
+    try {
       const response = await emailjs.sendForm(
         serviceId,
         templateId,
         form.current,
         {
-          publicKey: publicKey,
+          publicKey: publicKey
         }
       )
 

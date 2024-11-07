@@ -32,10 +32,11 @@ export default function CreationModal({ closeModal, creation }) {
         <div className="modal_content">
           <img
             className="modal_img"
-            src={`${import.meta.env.BASE_URL}/assets/creations/${
+            src={`${import.meta.env.BASE_URL}assets/creations/${
               creation.image
             }_page.webp`}
             alt={creation.name}
+            loading="lazy"
           ></img>
         </div>
       </div>

@@ -16,6 +16,11 @@ export default function Skills() {
 
   return (
     <section className="div__skills">
+      <img
+        className="div__skills-img"
+        src={`${import.meta.env.BASE_URL}assets/images/colored_code.webp`}
+        loading="lazy"
+      />
       <h2>COMPÉTENCES</h2>
       <div className="div__skills-categories">
         <article className="article__category">

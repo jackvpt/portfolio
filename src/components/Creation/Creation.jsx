@@ -33,6 +33,7 @@ export default function Creation({ creation }) {
               creation.image
             }_thumbnail.webp`}
             alt={creation.name}
+            loading="lazy"
           ></img>
         </div>
         <div className="card__back">

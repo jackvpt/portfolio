@@ -11,6 +11,7 @@ export default function EducationStep({ step }) {
           className="img__step"
           src={`${import.meta.env.BASE_URL}assets/education/${step.image}`}
           alt={step.image}
+          loading="lazy"
         ></img>
       </div>
       <div
