@@ -20,6 +20,7 @@ export default function Skills() {
         className="div__skills-img"
         src={`${import.meta.env.BASE_URL}assets/images/colored_code.webp`}
         loading="lazy"
+        alt="code en couleurs"
       />
       <h2>COMPÉTENCES</h2>
       <div className="div__skills-categories">
