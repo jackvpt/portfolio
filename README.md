@@ -14,7 +14,7 @@ Bienvenue dans le code source de mon portfolio ! Ce projet est construit avec [V
 
 ## Aperçu
 
-![Aperçu du portfolio](./screenshots/preview.png)
+![Aperçu du portfolio](./screenshot.webp)
 
 ## Fonctionnalités
 
@@ -55,7 +55,7 @@ Bienvenue dans le code source de mon portfolio ! Ce projet est construit avec [V
 - Sass - Pour le style et les animations
 
 ## Améliorations futures
-- Ajout d'un sombre clair
+- Ajout d'un mode clair
 - Ajout d'une version en Anglais
 
 ## A propos
