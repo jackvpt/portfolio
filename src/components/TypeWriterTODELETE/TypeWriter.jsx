@@ -5,7 +5,7 @@ export default function TypeWriter() {
   return (
     <Typewriter
       options={{
-        strings: ["Jacques Verpoest - Développeur Web"],
+        strings: ["Jacques Verpoest - gdfgfdgfdfggdfdfgfgdDéveloppeur Web"],
         autoStart: true,
         loop: true,
       }}

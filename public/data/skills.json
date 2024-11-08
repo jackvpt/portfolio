@@ -8,9 +8,11 @@
       { "name": "React", "rating": 8 },
       { "name": "Redux", "rating": 7 },
       { "name": "Sass", "rating": 8 },
-      { "name": "Tailwind", "rating": 7 }
+      { "name": "Tailwind", "rating": 7 },
+      { "name": "Bootstrap", "rating": 6 }
     ]
   },
+
   {
     "category": "backend",
     "skills": [
