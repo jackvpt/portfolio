@@ -119,7 +119,7 @@ export default function Contact() {
             size="xl"
             style={{ color: "red" }}
           />
-          L'adresse email n'est pas valide
+          L&apos;adresse email n&apos;est pas valide
         </div>
       )}
     </div>
