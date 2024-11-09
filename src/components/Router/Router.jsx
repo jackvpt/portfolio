@@ -1,5 +1,5 @@
 import React from "react"
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { HashRouter, Routes, Route } from "react-router-dom"
 import Home from "../../pages/Home/Home"
 import Error from "../../pages/Error/Error"
 import Footer from "../Footer/Footer"
@@ -7,7 +7,7 @@ import Footer from "../Footer/Footer"
 export default function Router() {
   return (
     <React.StrictMode>
-      <BrowserRouter>
+      <HashRouter>
         <div>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -15,7 +15,7 @@ export default function Router() {
           </Routes>
         </div>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </React.StrictMode>
   )
 }

@@ -27,7 +27,7 @@
     "description": "Utilisation de React pour créer une application web complète et dynamique de location d'appartements.",
     "text":"Le projet Kasa, initialisé avec React Create App, permet de configurer la navigation entre les pages de l'application avec React Router, de développer les éléments de l'interface grâce aux <b>composants React</b>. Des animations CSS sont mises en œuvre et l'interface est développée avec Sass.<br>La principale difficulté était de maîtriser l'univers React.",
     "github": "https://github.com/jackvpt/kasa.git",
-    "website": ""
+    "website": "https://kasa.pegasoft.fr/"
   },
   {
     "name": "Vieux Grimoire",
