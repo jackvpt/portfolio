@@ -14,6 +14,27 @@
   background-position: center;
   background-size: cover;
 
+  p{
+    text-align: center;
+    color:variables.$color_accessible2_2;
+    font-size:20px;
+    margin-bottom: 30px;
+
+    @media (max-width: variables.$breakpoint-desktop) {
+      font-size:18px;
+    }
+
+    @media (max-width: variables.$breakpoint-mobile) {
+      font-size: 16px;
+    }
+  }
+
+  .span__crlf {
+    @media (min-width: variables.$breakpoint-desktop-large) {
+      display: none;
+    }
+  }
+
   form {
     display: flex;
     flex-direction: column;
