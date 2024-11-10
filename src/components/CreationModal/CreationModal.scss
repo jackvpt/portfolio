@@ -114,14 +114,29 @@
 
   .img__tag {
     opacity: 0;
-    animation: fadeIn 3s ease forwards;
+    animation: fadeInGlow 3s forwards;
   }
-  @keyframes fadeIn {
-    from {
+
+  @keyframes fadeInGlow {
+    0% {
       opacity: 0;
+      filter: brightness(0%);
     }
-    to {
+    25% {
+      opacity: 0.25;
+      filter: brightness(50%);
+    }
+    50% {
+      opacity: 0.5;
+      filter: brightness(100%);
+    }
+    80% {
       opacity: 1;
+      filter: brightness(200%);
+    }
+    100% {
+      opacity: 1;
+      filter: brightness(100%);
     }
   }
 }
