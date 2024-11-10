@@ -33,6 +33,14 @@
   padding: 0 10px;
   max-width: 60vw;
   height: 80vh;
+
+  @media (max-width: variables.$breakpoint-desktop) {
+    max-width: 75vw;
+  }
+
+  @media (max-width: variables.$breakpoint-tablet) {
+    max-width: 90vw;
+  }
 }
 
 .modal_header {
@@ -55,8 +63,8 @@
 
     @media (max-width: variables.$breakpoint-tablet) {
       font-size: 16px;
-      left:15px;
-      transform:none;
+      left: 15px;
+      transform: none;
     }
   }
 
@@ -110,12 +118,12 @@
   }
   @keyframes fadeIn {
     from {
-        opacity: 0;
+      opacity: 0;
     }
     to {
-        opacity: 1;
+      opacity: 1;
     }
-}
+  }
 }
 
 .modal_img {
