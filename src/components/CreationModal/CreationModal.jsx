@@ -1,25 +1,38 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react"
+import PropTypes from "prop-types"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faSquareXmark } from "@fortawesome/free-solid-svg-icons"
 import { faGlobe } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import "./CreationModal.scss"
 
+CreationModal.propTypes = {
+  closeModal: PropTypes.func.isRequired,
+  creation: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    website: PropTypes.string,
+    github: PropTypes.string,
+    text: PropTypes.string,
+    skills: PropTypes.arrayOf(PropTypes.string).isRequired,
+    image: PropTypes.string.isRequired
+  }).isRequired
+}
+
 export default function CreationModal({ closeModal, creation }) {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
-    setIsVisible(true);
-  }, []);
+    setIsVisible(true)
+  }, [])
 
   const handleClose = () => {
-    setIsVisible(false);
-    setTimeout(closeModal, 500);
-  };
+    setIsVisible(false)
+    setTimeout(closeModal, 500)
+  }
 
   const handleBackgroundClick = (event) => {
     if (event.target.classList.contains("modal_window")) {
-      handleClose();
+      handleClose()
     }
   }
 
