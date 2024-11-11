@@ -3,7 +3,7 @@ import "./EducationStep.scss"
 
 EducationStep.propTypes = {
   step: PropTypes.shape({
-    rank: PropTypes.integer.isRequired,
+    rank: PropTypes.number.isRequired,
     year: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired

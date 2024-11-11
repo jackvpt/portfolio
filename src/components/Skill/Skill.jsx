@@ -4,7 +4,7 @@ import "./Skill.scss"
 Skill.propTypes = {
   skill: PropTypes.shape({
     name: PropTypes.string.isRequired,
-    rating: PropTypes.integer.isRequired
+    rating: PropTypes.number.isRequired
   }).isRequired
 }
 
