@@ -1,4 +1,3 @@
-import dotenv from "dotenv"
 import { useState, useRef } from "react"
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons"
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons"
@@ -66,8 +65,12 @@ export default function Contact() {
     <div className="div__contact">
       <h2>CONTACT</h2>
       <p>
-        Vous avez un projet, une question ou une idée à partager ? <span className="span__crlf"><br/></span>N&apos;hésitez pas
-        à me contacter, je serai ravi d&apos;échanger avec vous !
+        Vous avez un projet, une question ou une idée à partager ?{" "}
+        <span className="span__crlf">
+          <br />
+        </span>
+        N&apos;hésitez pas à me contacter, je serai ravi d&apos;échanger avec
+        vous !
       </p>
       <form ref={form} onSubmit={handleSubmit}>
         <label htmlFor="user_name">Votre nom</label>

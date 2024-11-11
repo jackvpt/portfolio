@@ -5,7 +5,7 @@
     "image": "booki",
     "title": "Intégration front-end",
     "description": "Interface responsive pour un site de réservation de logement et d'activités touristiques.",
-    "text":"Le projet Booki permet d'implémenter une interface responsive avec HTML et CSS. Le contenu à intégrer doit être conforme à la maquette fournie (<i>Figma</i>). Le projet doit être versionné avec Git et Github.<br>La principale difficulté était de réaliser un site pleinement <b>responsive</b>.",
+    "text": "Le projet Booki permet d'implémenter une interface responsive avec HTML et CSS. Le contenu à intégrer doit être conforme à la maquette fournie (<i>Figma</i>). Le projet doit être versionné avec Git et Github.<br>La principale difficulté était de réaliser un site pleinement <b>responsive</b>.",
     "github": "https://github.com/jackvpt/booki.git",
     "website": "https://jackvpt.github.io/booki/"
   },
@@ -15,7 +15,7 @@
     "image": "sophie_bluel",
     "title": "Dynamiser une interface utilisateur",
     "description": "Site de portfolio interactif pour une photographe en intégrant des fonctionnalités avancées de JavaScript ainsi qu'une API REST.",
-    "text":"Le projet Sophie Bluel permet de gérer les événements utilisateurs, de manipuler les éléments du DOM et de récupérer les données utilisateurs via des formulaires. Le tout en JavaScript.<br>La principale difficulté était la mise en place de la <b>communication avec l'API</b>.",
+    "text": "Le projet Sophie Bluel permet de gérer les événements utilisateurs, de manipuler les éléments du DOM et de récupérer les données utilisateurs via des formulaires. Le tout en JavaScript.<br>La principale difficulté était la mise en place de la <b>communication avec l'API</b>.",
     "github": "https://github.com/jackvpt/Portfolio-architecte-sophie-bluel.git",
     "website": ""
   },
@@ -25,7 +25,7 @@
     "image": "kasa",
     "title": "Développement front-end",
     "description": "Utilisation de React pour créer une application web complète et dynamique de location d'appartements.",
-    "text":"Le projet Kasa, initialisé avec React Create App, permet de configurer la navigation entre les pages de l'application avec React Router, de développer les éléments de l'interface grâce aux <b>composants React</b>. Des animations CSS sont mises en œuvre et l'interface est développée avec Sass.<br>La principale difficulté était de maîtriser l'univers React.",
+    "text": "Le projet Kasa, initialisé avec React Create App, permet de configurer la navigation entre les pages de l'application avec React Router, de développer les éléments de l'interface grâce aux <b>composants React</b>. Des animations CSS sont mises en œuvre et l'interface est développée avec Sass.<br>La principale difficulté était de maîtriser l'univers React.",
     "github": "https://github.com/jackvpt/kasa.git",
     "website": "https://kasa.pegasoft.fr/"
   },
@@ -35,7 +35,7 @@
     "image": "vieux_grimoire",
     "title": "Développement back-end",
     "description": "Création d'une API pour une application de gestion critiques de livres qui permet aux utilisateurs de noter et de commenter les ouvrages disponibles.",
-    "text":"Le projet Vieux Grimoire permet d'implémenter un modèle logique de données, de <b>mettre en œuvre des opérations CRUD</b> et de stocker des données de manière sécurisée.<br>La principale difficulté était de maîtriser l'architecture du backend.",
+    "text": "Le projet Vieux Grimoire permet d'implémenter un modèle logique de données, de <b>mettre en œuvre des opérations CRUD</b> et de stocker des données de manière sécurisée.<br>La principale difficulté était de maîtriser l'architecture du backend.",
     "github": "https://github.com/jackvpt/vieuxgrimoire.git",
     "website": ""
   }

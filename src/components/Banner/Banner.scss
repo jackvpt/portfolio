@@ -19,7 +19,9 @@
     top: 50%;
     transform: translate(-50%, -50%);
 
-    .span__union, .Typewriter__wrapper,.Typewriter__cursor{
+    .span__union,
+    .Typewriter__wrapper,
+    .Typewriter__cursor {
       font-size: 44px;
       color: orange;
       @media (max-width: variables.$breakpoint-desktop) {
@@ -60,4 +62,3 @@
     background-color: orange;
   }
 }
-
