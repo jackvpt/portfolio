@@ -5,7 +5,7 @@
     "image": "booki",
     "title": "Intégration front-end",
     "description": "Interface responsive pour un site de réservation de logement et d'activités touristiques.",
-    "text":"Le projet Booki permet d'implémenter une interface responsive avec HTML et CSS. Le contenu à intégrer doit être conforme à la maquette fournie (<i>Figma</i>). Le projet doit être versionné avec Git et Github.<br>La principale difficulté était de réaliser un site pleinement <b>responsive</b>.",
+    "text": "Le projet Booki permet d'implémenter une interface responsive avec HTML et CSS. Le contenu à intégrer doit être conforme à la maquette fournie (<i>Figma</i>). Le projet doit être versionné avec Git et Github.<br>La principale difficulté était de réaliser un site pleinement <b>responsive</b>.",
     "github": "https://github.com/jackvpt/booki.git",
     "website": "https://jackvpt.github.io/booki/"
   },
@@ -15,7 +15,7 @@
     "image": "sophie_bluel",
     "title": "Dynamiser une interface utilisateur",
     "description": "Site de portfolio interactif pour une photographe en intégrant des fonctionnalités avancées de JavaScript ainsi qu'une API REST.",
-    "text":"Le projet Sophie Bluel permet de gérer les événements utilisateurs, de manipuler les éléments du DOM et de récupérer les données utilisateurs via des formulaires. Le tout en JavaScript.<br>La principale difficulté était la mise en place de la <b>communication avec l'API</b>.",
+    "text": "Le projet Sophie Bluel permet de gérer les événements utilisateurs, de manipuler les éléments du DOM et de récupérer les données utilisateurs via des formulaires. Le tout en JavaScript.<br>La principale difficulté était la mise en place de la <b>communication avec l'API</b>.",
     "github": "https://github.com/jackvpt/Portfolio-architecte-sophie-bluel.git",
     "website": ""
   },
@@ -25,7 +25,7 @@
     "image": "kasa",
     "title": "Développement front-end",
     "description": "Utilisation de React pour créer une application web complète et dynamique de location d'appartements.",
-    "text":"Le projet Kasa, initialisé avec React Create App, permet de configurer la navigation entre les pages de l'application avec React Router, de développer les éléments de l'interface grâce aux <b>composants React</b>. Des animations CSS sont mises en œuvre et l'interface est développée avec Sass.<br>La principale difficulté était de maîtriser l'univers React.",
+    "text": "Le projet Kasa, initialisé avec React Create App, permet de configurer la navigation entre les pages de l'application avec React Router, de développer les éléments de l'interface grâce aux <b>composants React</b>. Des animations CSS sont mises en œuvre et l'interface est développée avec Sass.<br>La principale difficulté était de maîtriser l'univers React.",
     "github": "https://github.com/jackvpt/kasa.git",
     "website": "https://kasa.pegasoft.fr/"
   },
@@ -35,8 +35,88 @@
     "image": "vieux_grimoire",
     "title": "Développement back-end",
     "description": "Création d'une API pour une application de gestion critiques de livres qui permet aux utilisateurs de noter et de commenter les ouvrages disponibles.",
-    "text":"Le projet Vieux Grimoire permet d'implémenter un modèle logique de données, de <b>mettre en œuvre des opérations CRUD</b> et de stocker des données de manière sécurisée.<br>La principale difficulté était de maîtriser l'architecture du backend.",
+    "text": "Le projet Vieux Grimoire permet d'implémenter un modèle logique de données, de <b>mettre en œuvre des opérations CRUD</b> et de stocker des données de manière sécurisée.<br>La principale difficulté était de maîtriser l'architecture du backend.",
     "github": "https://github.com/jackvpt/vieuxgrimoire.git",
+    "website": ""
+  },
+  {
+    "name": "Oh My Food",
+    "skills": ["html", "css", "javascript"],
+    "image": "oh_my_food",
+    "title": "Développement front-end",
+    "description": "Mettre en œuvre des effets CSS graphiques avancés.",
+    "text": "Assurer la <b>cohérence graphique</b> d'un site web",
+    "github": "https://github.com/jackvpt/ohmyfood.git",
+    "website": ""
+  },
+  {
+    "name": "Game On",
+    "skills": ["html", "css", "javascript"],
+    "image": "game_on",
+    "title": "Développement front-end",
+    "description": "Démarrer le Javascript avec le site de GameOn, une entreprise de gaming.",
+    "text": "Programmer avec Javascript depuis zéro",
+    "github": "https://github.com/jackvpt/GameOn-website-FR.git",
+    "website": ""
+  },
+  {
+    "name": "Fish Eye",
+    "skills": ["html", "css", "javascript"],
+    "image": "fish_eye",
+    "title": "Développement front-end",
+    "description": "Allez plus loin en Javascript avec Fisheye, cette application de photographes freelances. Mettre l'accent sur l'accessibilité",
+    "text": "<b>Assurer l'accessibilité</b> d'un site web. Développer une application web modulaire avec des design patterns. Ecrire du code JavaScript maintenable. Gérer les évènements d'un site avec JavaScript.",
+    "github": "https://github.com/jackvpt/Front-End-Fisheye.git",
+    "website": ""
+  },
+  {
+    "name": "Les Petits Plats",
+    "skills": ["html", "css", "javascript"],
+    "image": "les_petits_plats",
+    "title": "Développement front-end",
+    "description": "Implémentez un algorithme de recherche de recettes de cuisines pour le site Les Petits Plats grâce à des outils et méthodes avancées de Javascript ainsi que Bootstrap pour l'interface.",
+    "text": "Analyser un problème informatique. Développer un algorithme pour résoudre un problème",
+    "github": "",
+    "website": ""
+  },
+  {
+    "name": "Billed",
+    "skills": ["html", "css", "javascript"],
+    "image": "billed",
+    "title": "Développement front-end",
+    "description": "Corriger le code d'une application de gestion de notes de frais et implémenter des tests unitaires et d'intégration.",
+    "text": "Ecrire des tests d'intégration avec JavaScript. Débugger une application web avec le Chrome Debugger. Ecrire des tests unitaires avec JavaScript. Rédiger un plan de test end-to-end manuel.",
+    "github": "https://github.com/jackvpt/Billed-app-FR-Front.git",
+    "website": ""
+  },
+  {
+    "name": "Sport See",
+    "skills": ["react"],
+    "image": "sport_see",
+    "title": "Développement fullstack",
+    "description": "Intégrer des graphiques et des diagrammes avec React pour SportSee, un tableau de bord d'analytics de sport. Utiliser une API pour récupérer les données.",
+    "text": "Développer des éléments graphiques avancés à l'aide de bibliothèques JavaScript. Interagir avec un service Web. Assurer la qualité des données d'une application.",
+    "github": "https://github.com/jackvpt/sportsee.git",
+    "website": ""
+  },
+  {
+    "name": "Argent Bank",
+    "skills": ["react"],
+    "image": "argent_bank",
+    "title": "Développement fullstack",
+    "description": "Compléter le code d'un site. Ecrire des appels à l'API REST pour connecter le front au back et modéliser une API.",
+    "text": "S'authentifier à une API. Implémenter un gestionnaire d'état dans une application React. Intéragir avec une API. Modéliser une API.",
+    "github": "https://github.com/jackvpt/argentbank.git",
+    "website": ""
+  },
+  {
+    "name": "HRNet",
+    "skills": ["react"],
+    "image": "hrnet",
+    "title": "Développement fullstack",
+    "description": "Convertir une application vers React. Transformer un plugin jQuery du site en React.",
+    "text": "Analyser la performance d'une application web. Déployer une application front-end. Refondre une application pour réduire la dette technique. Mettre en place son environnement Front-End. Produire de la documentation technique pour une application.",
+    "github": "https://github.com/jackvpt/hrnet.git",
     "website": ""
   }
 ]

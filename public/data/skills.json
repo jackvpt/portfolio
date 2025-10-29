@@ -6,9 +6,9 @@
       { "name": "CSS", "rating": 9 },
       { "name": "Javascript", "rating": 9 },
       { "name": "React", "rating": 8 },
-      { "name": "Redux", "rating": 7 },
+      { "name": "Redux", "rating": 8 },
       { "name": "Sass", "rating": 8 },
-      { "name": "Tailwind", "rating": 7 },
+      { "name": "Tailwind", "rating": 6 },
       { "name": "Bootstrap", "rating": 6 }
     ]
   },
@@ -16,8 +16,8 @@
   {
     "category": "backend",
     "skills": [
-      { "name": "MongoDB", "rating": 7 },
-      { "name": "Express", "rating": 7 },
+      { "name": "MongoDB", "rating": 8 },
+      { "name": "Express", "rating": 8 },
       { "name": "NodeJS", "rating": 8 },
       { "name": "PHP", "rating": 6 },
       { "name": "mySQL", "rating": 7 }
