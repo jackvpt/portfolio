@@ -13,11 +13,11 @@ export default function Banner() {
         <Typewriter
           options={{
             strings: [
-              "Jacques Verpoest<span class='span__union'> - </span><span class='span__crlf'><br /></span>Développeur Web",
+              "Jacques Verpoest<span class='span__union'> - </span><span class='span__crlf'><br /></span>Développeur Web"
             ],
             autoStart: true,
             loop: true,
-            pauseFor: 10000,
+            pauseFor: 10000
           }}
         />
       </h1>

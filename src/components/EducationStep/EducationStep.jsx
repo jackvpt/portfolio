@@ -1,4 +1,14 @@
+import PropTypes from "prop-types"
 import "./EducationStep.scss"
+
+EducationStep.propTypes = {
+  step: PropTypes.shape({
+    rank: PropTypes.number.isRequired,
+    year: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired
+  }).isRequired
+}
 
 export default function EducationStep({ step }) {
   return (

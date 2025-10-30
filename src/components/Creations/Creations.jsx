@@ -14,12 +14,12 @@ export default function Creations() {
   // Get data from fetch
   const creations = fetchResult.data
 
-   const breakpointColumnsObj = {
+  const breakpointColumnsObj = {
     default: 5,
     1440: 4,
     1024: 3,
     768: 2,
-    600: 1,
+    600: 1
   }
 
   return (
@@ -31,10 +31,7 @@ export default function Creations() {
         columnClassName="grid-column"
       >
         {creations.map((creation, index) => (
-          <Creation
-            key={index}
-            creation={creation}
-          />
+          <Creation key={index} creation={creation} />
         ))}
       </Masonry>
     </section>

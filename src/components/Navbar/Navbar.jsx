@@ -1,8 +1,11 @@
 import { useState } from "react"
 import { HashLink } from "react-router-hash-link"
-import { faBars } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import PropTypes from "prop-types"
 import "./Navbar.scss"
+
+Navbar.propTypes = {
+  activeSection: PropTypes.string.isRequired
+}
 
 export default function Navbar({ activeSection }) {
   const [isOpen, setIsOpen] = useState(false)
