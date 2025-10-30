@@ -7,11 +7,11 @@ export default function Introduction() {
       <p>
         <br />
         Passionné par le développement informatique depuis toujours, j’ai
-        profité de ma reconversion professionnelle pour suivre la formation
-        “Développeur Web” chez OpenClassRooms.
+        profité de ma reconversion professionnelle pour suivre les formations
+        &quot;Développeur Web&quot; et &quot;Développeur Application Javascript React&quot; chez OpenClassRooms.
         <br />
         <br />
-        Cette formation de qualité m’a permis d’acquérir les connaissances
+        Ces formations de qualité m’ont permis d’acquérir les connaissances
         nécessaires afin de débuter une nouvelle carrière dans le développement.
       </p>
     </section>
